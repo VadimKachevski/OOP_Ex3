@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import MydataStructure.*;
 import algorithms.*;
+import gameClient.MyGameGUI;
 import MydataStructure.myDGraph;
 import MydataStructure.graph;
 import MydataStructure.node_data;
@@ -123,7 +124,8 @@ class g_GUITest {
 		g.connect(10, 11, 60);
 		g.connect(5, 6, 10);
 		g.connect(6, 1, 50);
-		g_GUI_new ggnew = new g_GUI_new(g);
+		MyGameGUI ggnew = new MyGameGUI();
+//		g_GUI_new ggnew = new g_GUI_new(g);
 		System.out.println("asd");
 	}
 }

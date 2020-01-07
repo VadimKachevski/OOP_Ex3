@@ -36,7 +36,7 @@ public class SimpleGameClient {
 		
 		
 		
-		game_service game = Game_Server.getServer(0); // you have [0,23] games
+		game_service game = Game_Server.getServer(2); // you have [0,23] games
 		
 		String g = game.getGraph();
 		myDGraph gg = new myDGraph();

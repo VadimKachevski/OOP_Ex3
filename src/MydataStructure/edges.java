@@ -44,6 +44,15 @@ public class edges implements edge_data,Serializable {
 		this(other.srcVertex,other.destVertx,other.weight,other.tag);
 		this.metadata = other.metadata;
 	}
+	public edges(edge_data other) {
+			this(other.getSrc(),other.getDest(),other.getWeight(),other.getTag());
+			if(other instanceof edges)
+			{
+				this.metadata = ((edges) other).metadata;
+			}
+		
+	}
+	
 	@Override
 	public int getSrc() {
 		return srcVertex;

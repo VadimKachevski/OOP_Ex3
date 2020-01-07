@@ -484,7 +484,7 @@ import gameClient.MyGameGUI;
  */
 public final class StdDraw_gameGUI implements ActionListener, MouseListener, MouseMotionListener, KeyListener {
 
-	
+	static boolean drawed=false;
 	static MyGameGUI g;
 	
 	/**
@@ -599,7 +599,7 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 
 	// boundary of drawing canvas, 0% border
 	// private static final double BORDER = 0.05;
-	private static final double BORDER = 0.00;
+	private static final double BORDER = 0.1;
 	private static final double DEFAULT_XMIN = 0.0;
 	private static final double DEFAULT_XMAX = 1.0;
 	private static final double DEFAULT_YMIN = 0.0;
@@ -1689,7 +1689,7 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 	}
 
 
-	public static void setG_GUI(myGameGUI theG)
+	public static void setG_GUI(MyGameGUI theG)
 	{
 		g= theG;
 	}
@@ -1709,21 +1709,21 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		
 		String act = e.getActionCommand();
 		switch (act) {
-		case "Draw graph":
-			g.paint();
+		case "Play manual":
+			g.Play_manual();
 			break;
-		case "Draw from file":g.DrawFromFile();
+		case "Play Automaticly":g.Play_Automaticly();
 		break;
-		case "Save to file" :g.saveToFile();
+		case "play" :g.play();
 		break;
-		case "find Shortest path" : g.shortestPath();
+		case "stop" : g.stop();
 		break;
-		case "find Shortest path distance" : g.ShortestPathDist();
-		break;
-		case "TSP enter all the nodes" : g.TSPEnterNodes();
-		break;
-		case "TSP from file" : g.TSPfromFile();
-		break;
+//		case "find Shortest path distance" : g.ShortestPathDist();
+//		break;
+//		case "TSP enter all the nodes" : g.TSPEnterNodes();
+//		break;
+//		case "TSP from file" : g.TSPfromFile();
+//		break;
 		default:
 			break;
 		}
@@ -1939,8 +1939,18 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		}
 	}
 
-
-
+	public static JFrame getJFrame()
+	{
+		return frame;
+	}
+	public static void setDrawed()
+	{
+		drawed=true;
+	}
+	public static boolean getDrawed()
+	{
+		return drawed;
+	}
 
 	/**
 	 * Test client.
