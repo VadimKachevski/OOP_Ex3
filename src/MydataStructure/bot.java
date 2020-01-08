@@ -24,8 +24,14 @@ public class bot {
 	public bot(int id,node_data currNode,edge_data currEdge,int money,Point3D pos,double speed)
 	{
 		this.id = id;
+		if(currNode != null)
+		{
 		this.currNode = new vertex(currNode);
+		}
+		if(currEdge != null)
+		{
 		this.currEdge = new edges(currEdge);
+		}
 		this.money = money;
 		this.pos = new Point3D(pos);
 		this.speed = speed;

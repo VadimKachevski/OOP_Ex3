@@ -36,7 +36,7 @@ public class SimpleGameClient {
 		
 		
 		
-		game_service game = Game_Server.getServer(2); // you have [0,23] games
+		game_service game = Game_Server.getServer(23); // you have [0,23] games
 		
 		String g = game.getGraph();
 		myDGraph gg = new myDGraph();
@@ -47,10 +47,11 @@ public class SimpleGameClient {
 		// the list of fruits should be considered in your solution
 		Iterator<String> f_iter = game.getFruits().iterator();
 		while(f_iter.hasNext()) {System.out.println(f_iter.next());}
-		
+//		List<String> robos = game.getRobots();
 		int src_node = 0;  // arbitrary node, you should start at one of the fruits
 		game.addRobot(src_node);
 		game.startGame();
+		
 		int i=0;
 		while(game.isRunning()) {
 			long t = game.timeToEnd();

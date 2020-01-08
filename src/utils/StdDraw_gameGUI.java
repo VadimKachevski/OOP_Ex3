@@ -1714,8 +1714,8 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			break;
 		case "Play Automaticly":g.Play_Automaticly();
 		break;
-		case "play" :g.play();
-		break;
+//		case "play" :g.play();
+//		break;
 		case "stop" : g.stop();
 		break;
 //		case "find Shortest path distance" : g.ShortestPathDist();
