@@ -74,6 +74,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 
 import MydataStructure.graph;
@@ -1706,32 +1707,53 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 //		if (filename != null) {
 //			StdDraw.save(chooser.getDirectory() + File.separator + chooser.getFile());
 //		}
-		
-		String act = e.getActionCommand();
-		switch (act) {
-		case "Play manual":
-			g.Play_manual();
-			break;
-		case "Play Automaticly":g.Play_Automaticly();
-		break;
-//		case "play" :g.play();
-//		break;
-		case "stop" : g.stop();
-		break;
-//		case "find Shortest path distance" : g.ShortestPathDist();
-//		break;
-//		case "TSP enter all the nodes" : g.TSPEnterNodes();
-//		break;
-//		case "TSP from file" : g.TSPfromFile();
-//		break;
-		default:
-			break;
+		String act = e.getActionCommand();	
+		if(act.equals("Play manual"))
+		{
+			JFrame jinput = new JFrame();
+			String fromS = JOptionPane.showInputDialog(jinput,"Which game to run? 0-23");
+			jinput.dispose();
+			threadman(fromS);
 		}
+//		switch (act) {
+//		case "Play manual":
+//			g.Play_manual();
+//			break;
+//		case "Play Automaticly":g.Play_Automaticly();
+//		break;
+////		case "play" :g.play();
+////		break;
+//		case "stop" : g.stop();
+//		break;
+////		case "find Shortest path distance" : g.ShortestPathDist();
+////		break;
+////		case "TSP enter all the nodes" : g.TSPEnterNodes();
+////		break;
+////		case "TSP from file" : g.TSPfromFile();
+////		break;
+//		default:
+//			break;
+//		}
 		
 		
 	}
-
-
+	static Thread t;
+	public static void threadman(String s)
+	{
+		t = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+				//g.ThreadPaint(game);
+				g.Play_manual(s);
+				t.interrupt();
+			}
+		});
+		t.start();
+	}
+	
+	
 	/***************************************************************************
 	 *  Mouse interactions.
 	 ***************************************************************************/
@@ -1788,7 +1810,8 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 	 */
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// this body is intentionally left empty
+		g.setXY(StdDraw_gameGUI.userX(e.getX()), StdDraw_gameGUI.userY(e.getY()));
+		
 	}
 
 	/**

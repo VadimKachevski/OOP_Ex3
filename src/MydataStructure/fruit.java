@@ -1,11 +1,16 @@
 package MydataStructure;
 
+import java.util.Collection;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 
 import utils.Point3D;
 
 public class fruit {
+	static double EPS = 0.00001;
+	graph g;
 	edge_data edge;
 	Point3D pos;
 	int value;
@@ -13,17 +18,31 @@ public class fruit {
 
 	public fruit() {
 		// TODO Auto-generated constructor stub
+		this.g = null;
 		this.edge=null;
 		this.pos=null;
 		this.value = 0;
 		this.type = -1;
 	}
-	public fruit(edge_data edge,Point3D pos,int val,int type)
+	public fruit(graph g)
 	{
+		this.g = g;
+		this.edge=null;
+		this.pos=null;
+		this.value = 0;
+		this.type = -1;
+	}
+	public fruit(edge_data edge,Point3D pos,int val,int type,graph g)
+	{
+		this.g = g;
 		this.edge = new edges(edge);
 		this.pos = new Point3D(pos);
 		this.value = val;
 		this.type = type;
+	}
+	public void setGraph(graph g)
+	{
+		this.g = g;
 	}
 	public void setType(int type)
 	{
@@ -73,6 +92,7 @@ public class fruit {
 				this.value = value;
 				int type = CurrFruit.getInt("type");
 				this.type = type;
+				findEdge();
 				//			}
 			}
 			catch (Exception e) {
@@ -81,5 +101,38 @@ public class fruit {
 			}
 		}
 	}
+	public void findEdge()
+	{
+		if(g!=null)
+		{
+			Collection<node_data> nd = g.getV();
+			for (node_data node_data : nd) {
+				Collection<edge_data> ed = g.getE(node_data.getKey());
+				for (edge_data edges : ed) {
+					int src = edges.getSrc();
+					int dest = edges.getDest();
+					if( (src-dest) * this.type < 0 )
+					{
+						node_data srcN = g.getNode(src);
+						node_data destN = g.getNode(dest);
+						Point3D srcD = srcN.getLocation();
+						Point3D destD = destN.getLocation();
+						double allDist = srcD.distance2D(destD);
+						double srcToPos = srcD.distance2D(pos);
+						double posToDest = pos.distance2D(destD);
+						if(Math.abs(allDist - (srcToPos + posToDest)) <= EPS)
+						{
+							this.edge = edges;
+							return;
+						}
+					}
 
+
+
+				}
+
+
+			}
+		}
+	}
 }
