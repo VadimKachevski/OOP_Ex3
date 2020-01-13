@@ -1,5 +1,7 @@
 package MydataStructure;
 
+import java.util.List;
+
 import org.json.JSONObject;
 
 import utils.Point3D;
@@ -13,7 +15,7 @@ public class bot {
 	Point3D pos;
 	double speed;
 	graph gg;
-	
+	List<node_data> path;
 	
 	
 	public bot() {
@@ -44,7 +46,14 @@ public class bot {
 		this.pos = new Point3D(pos);
 		this.speed = speed;
 	}
-	
+	public void setPath(List<node_data> path)
+	{
+		this.path = path;
+	}
+	public List<node_data> getPath()
+	{
+		return this.path;
+	}
 	public void setGrap(graph g)
 	{
 		this.gg = g;
@@ -89,31 +98,31 @@ public class bot {
 			try
 			{
 				JSONObject obj = new JSONObject(json);
-				JSONObject CurrFruit = (JSONObject) obj.get("Robot");
-				String pos = CurrFruit.getString("pos");
+				JSONObject CurrBot = (JSONObject) obj.get("Robot");
+				String pos = CurrBot.getString("pos");
 				String[] arr = pos.split(",");
 				double x = Double.parseDouble(arr[0]);
 				double y = Double.parseDouble(arr[1]);
 				double z = Double.parseDouble(arr[2]);
 				this.pos = new Point3D(x, y, z);
-				int id = CurrFruit.getInt("id");
+				int id = CurrBot.getInt("id");
 				this.id = id;
-				int value = CurrFruit.getInt("value");
+				int value = CurrBot.getInt("value");
 				this.money = value;
-				int speed = CurrFruit.getInt("speed");
+				int speed = CurrBot.getInt("speed");
 				this.speed = speed;
 				
 			
 				
 				if(this.gg != null)
 				{
-					int src = CurrFruit.getInt("src");
+					int src = CurrBot.getInt("src");
 					this.currNode = gg.getNode(src);
 				}
 				
 			}
 			catch (Exception e) {
-				// TODO: handle exception
+				e.printStackTrace();
 			}
 		}
 	}

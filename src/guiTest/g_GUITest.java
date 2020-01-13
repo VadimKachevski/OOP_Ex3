@@ -8,10 +8,13 @@ import org.junit.jupiter.api.Test;
 
 import MydataStructure.*;
 import algorithms.*;
+import gameClient.KML_Logger;
 import gameClient.MyGameGUI;
 import MydataStructure.myDGraph;
 import MydataStructure.graph;
 import MydataStructure.node_data;
+import Server.Game_Server;
+import Server.game_service;
 import gui.g_GUI;
 import gui.g_GUI_new;
 import utils.Point3D;
@@ -125,6 +128,13 @@ class g_GUITest {
 		g.connect(5, 6, 10);
 		g.connect(6, 1, 50);
 		MyGameGUI ggnew = new MyGameGUI();
+	
+		game_service game = Game_Server.getServer(2);
+		String gug = game.getGraph();
+		myDGraph gg = new myDGraph();
+		gg.init(gug);
+		KML_Logger k = new KML_Logger(gg);
+		k.test();
 //		g_GUI_new ggnew = new g_GUI_new(g);
 		System.out.println("asd");
 	}

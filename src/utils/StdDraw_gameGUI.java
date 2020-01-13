@@ -36,6 +36,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.MediaTracker;
 import java.awt.MenuItem;
+import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.Toolkit;
 
@@ -710,10 +711,10 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 
 		frame.setContentPane(draw);
 		frame.addKeyListener(std);    // JLabel cannot get keyboard focus
-		frame.setResizable(false);
+		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
 		// frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);      // closes only current window
-		frame.setTitle("Standard Draw");
+		frame.setTitle("Maze of Waze");
 		frame.setJMenuBar(createMenuBar());
 		frame.pack();
 		frame.requestFocusInWindow();
@@ -825,7 +826,6 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			ymax = max + BORDER * size;
 		}
 	}
-
 	/**
 	 * Sets both the <em>x</em>-scale and <em>y</em>-scale to the (same) specified range.
 	 *
@@ -1715,6 +1715,13 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			jinput.dispose();
 			threadman(fromS);
 		}
+		if(act.equals("Play Automaticly"))
+		{
+			JFrame jinput = new JFrame();
+			String fromS = JOptionPane.showInputDialog(jinput,"Which game to run? 0-23");
+			jinput.dispose();
+			threadauto(fromS);
+		}
 //		switch (act) {
 //		case "Play manual":
 //			g.Play_manual();
@@ -1747,6 +1754,20 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 				
 				//g.ThreadPaint(game);
 				g.Play_manual(s);
+				t.interrupt();
+			}
+		});
+		t.start();
+	}
+	public static void threadauto(String s)
+	{
+t = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+				//g.ThreadPaint(game);
+				g.Play_Automaticly(s);
 				t.interrupt();
 			}
 		});

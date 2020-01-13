@@ -15,6 +15,7 @@ public class fruit {
 	Point3D pos;
 	int value;
 	int type;
+	boolean occupied=false; 
 
 	public fruit() {
 		// TODO Auto-generated constructor stub
@@ -39,6 +40,14 @@ public class fruit {
 		this.pos = new Point3D(pos);
 		this.value = val;
 		this.type = type;
+	}
+	public void setOccupied(boolean occupied)
+	{
+		this.occupied = occupied;
+	}
+	public boolean getOccupied()
+	{
+		return this.occupied;
 	}
 	public void setGraph(graph g)
 	{
