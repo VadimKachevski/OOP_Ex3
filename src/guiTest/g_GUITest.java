@@ -129,13 +129,14 @@ class g_GUITest {
 		g.connect(6, 1, 50);
 		MyGameGUI ggnew = new MyGameGUI();
 	
-		game_service game = Game_Server.getServer(2);
-		String gug = game.getGraph();
-		myDGraph gg = new myDGraph();
-		gg.init(gug);
-		KML_Logger k = new KML_Logger(gg);
-		k.test();
+//		game_service game = Game_Server.getServer(2);
+//		String gug = game.getGraph();
+//		myDGraph gg = new myDGraph();
+//		gg.init(gug);
+//		KML_Logger k = new KML_Logger(gg);
+//		k.setGame(game);
+//		k.test();
 //		g_GUI_new ggnew = new g_GUI_new(g);
-		System.out.println("asd");
+		//System.out.println("asd");
 	}
 }

@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
@@ -49,6 +50,7 @@ public class MyGameGUI  {
 	game_service game;
 	boolean isBotChooser = true;
 	int botidtoMove;
+	KML_Logger k;
 
 	public MyGameGUI(graph g)  {
 		// TODO Auto-generated constructor stub
@@ -74,7 +76,7 @@ public class MyGameGUI  {
 		this.x= xpos;
 		this.y = ypos;
 	}
-	public void ThreadPaint(game_service game)
+	public void ThreadKML()
 	{
 
 		t = new Thread(new Runnable() {
@@ -87,30 +89,10 @@ public class MyGameGUI  {
 					if(graph!=null)
 					{
 						try {
-							Thread.sleep(50);
-//							Iterator<String> f_iter = game.getFruits().iterator();
-//							fruits.clear();
-//							if(f_iter.hasNext())
-//							{
-//								while(f_iter.hasNext())
-//								{
-//									String json = f_iter.next();
-//									fruit n = new fruit(graph);
-//									n.initFromJson(json);
-//									fruits.put(n.getPos(),n);
-//								}
-//
-//							}
-//							//bots.clear();
-//							List<String> botsStr = game.getRobots();
-//							for (String string : botsStr) {
-//								bot ber = new bot();
-//								ber.setGrap(graph);
-//								ber.botFromJSON(string);
-//
-//								bots.put(ber.getId(), ber);
-//							}
-							paint();
+							Thread.sleep(1000);
+							String time  = java.time.LocalDate.now()+"T"+java.time.LocalTime.now();
+							k.setFruits(time);
+							k.setBots(time);
 						}
 
 					 catch (Exception e) {
@@ -134,9 +116,11 @@ private void initGUI()
 		StdDraw_gameGUI.enableDoubleBuffering();
 		StdDraw_gameGUI.setDrawed();
 	}
-
+	
 	if(graph != null)
 	{
+		k=new KML_Logger(graph);
+		k.BuildGraph();
 		Collection<node_data> nd = graph.getV();
 		for (node_data node_data : nd) {
 			Point3D s = node_data.getLocation();
@@ -494,16 +478,40 @@ private void gameInit(int gameNum)
 		{
 			bots = new Hashtable<Integer, bot>();
 		}
+		ArrayList<fruit> fruitSmart = new ArrayList<fruit>();
 		Set<Point3D> setForFuritLoc = fruits.keySet();
 		for (Point3D point3d : setForFuritLoc) {
-			if(counter>= amountRob)
-			{
-				break;
-			}
+//			if(counter>= amountRob)
+//			{
+//				break;
+//			}
 			fruit CurrFruit = fruits.get(point3d);
-			int RobPos = CurrFruit.getEdge().getSrc();
+			fruitSmart.add(CurrFruit);
+//			int RobPos = CurrFruit.getEdge().getSrc();
+//			game.addRobot(RobPos);
+//			counter++;
+		}
+		while(!fruitSmart.isEmpty() && counter < amountRob) // TO fix later better AI with Weight
+		{
+			int Max = Integer.MIN_VALUE;
+			fruit maxFruit=null;
+			int fruitID= 0;
+			
+			for(int i=0;i<fruitSmart.size();i++)
+			{
+				fruit theFruit = fruitSmart.get(i);
+				if(theFruit.getValue() > Max) 
+				{
+					Max = theFruit.getValue();
+					maxFruit = theFruit;
+					fruitID = i;
+				}
+			}
+			int RobPos = maxFruit.getEdge().getSrc();
 			game.addRobot(RobPos);
 			counter++;
+			fruitSmart.remove(fruitID);
+			
 		}
 		while(counter < amountRob)
 		{
@@ -728,24 +736,31 @@ private void playAuto(game_service game2) {
 	game.startGame();
 	//ThreadPaint(game);
 	//ThreadMouse(game);
+	k.setGame(game);
+	ThreadKML();
+	//System.out.println(game.toString());
 	while(game.isRunning()) {
 		//initGUI();
 		//System.out.println(game.toString());
-		List<String> tre = game.move();
-		for (String string : tre) {
-			System.out.println(string);
-		}
+//		List<String> tre = game.move();
+//		for (String string : tre) {
+//			System.out.println(string);
+//		}
 		moveRobotsAuto(game);
 	}
+	k.saveToFile("test");
 	String results = game.toString();
 	System.out.println("Game Over: "+results);
 	
 }
 private void moveRobotsAuto(game_service game) {
-	List<String> log = game.move();
-	if(log!=null)
-	{
+//	List<String> log = game.move();
+//	if(log!=null)
+//	{
+		
 		long t = game.timeToEnd();
+		//System.out.println(t/1000);
+		//System.out.println(java.time.LocalDate.now()+"T"+java.time.LocalTime.now());
 		//int dest = nextNodeManual(game);
 		ArrayList<bot> botsToMove = new ArrayList<bot>();
 		ArrayList<fruit> fruitsWithoutBots = new ArrayList<fruit>();
@@ -778,13 +793,17 @@ private void moveRobotsAuto(game_service game) {
 				//double distTemp = Integer.MAX_VALUE;
 				for(int j=0;j<fruitsWithoutBots.size();j++)
 				{
-					if(GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey(), fruitsWithoutBots.get(j).getEdge().getSrc()) + fruitsWithoutBots.get(j).getEdge().getWeight() < dist)
+//					double fruval = fruitsWithoutBots.get(j).getValue();
+//					fruval*=10;
+					//if((GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey(), fruitsWithoutBots.get(j).getEdge().getSrc()) + fruitsWithoutBots.get(j).getEdge().getWeight()) < dist)
+					if(GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey()	, fruitsWithoutBots.get(j).getEdge().getSrc()) + GA.shortestPathDist(fruitsWithoutBots.get(j).getEdge().getSrc()	, fruitsWithoutBots.get(j).getEdge().getDest() ) < dist)
 					{
 						srcIndex = i;
 						destIndex = j;
 						SrcFrom = botsToMove.get(i);
 						DestTo = fruitsWithoutBots.get(j);
-						dist = GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey(), fruitsWithoutBots.get(j).getEdge().getSrc()) + fruitsWithoutBots.get(j).getEdge().getWeight();
+						dist = GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey()	, fruitsWithoutBots.get(j).getEdge().getSrc()) + GA.shortestPathDist(fruitsWithoutBots.get(j).getEdge().getSrc()	, fruitsWithoutBots.get(j).getEdge().getDest() );
+						//dist =(GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey(), fruitsWithoutBots.get(j).getEdge().getSrc()) + fruitsWithoutBots.get(j).getEdge().getWeight());
 					}
 				}
 			}
@@ -804,7 +823,7 @@ private void moveRobotsAuto(game_service game) {
 			if(b.getPath() != null)
 			{
 				
-				if(b.getCurrNode().getLocation().distance2D(b.getPos())<= 0.00001)
+				if(b.getCurrNode().getLocation().distance2D(b.getPos())<= 0.000001)
 				{
 					
 					//System.out.println(botidtoMove);
@@ -818,13 +837,14 @@ private void moveRobotsAuto(game_service game) {
 					{
 						b.setPath(null);
 					}
-					game.move();
+					//game.move();
+					
 				}
 			}
 		}
+		game.move();
 		
-		
-	}
+	
 	Iterator<String> f_iter = game.getFruits().iterator();
 	fruits.clear();
 	if(f_iter.hasNext())
@@ -848,6 +868,9 @@ private void moveRobotsAuto(game_service game) {
 
 		bots.put(ber.getId(), ber);
 	}
+//	String time  = java.time.LocalDate.now()+"T"+java.time.LocalTime.now();
+//	k.setFruits(time);
+//	k.setBots(time);
 	paint();
 
 }

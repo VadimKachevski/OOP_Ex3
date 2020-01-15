@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import utils.Point3D;
 
 public class fruit {
-	static double EPS = 0.00001;
+	static double EPS = 0.0000001;
 	graph g;
 	edge_data edge;
 	Point3D pos;
