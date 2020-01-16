@@ -2961,6 +2961,14 @@
                 </ns2:Icon>
             </ns2:IconStyle>
         </ns2:Style>
+        <ns2:ExtendedData>
+            <ns2:Data name="grade">
+                <ns2:value>648</ns2:value>
+            </ns2:Data>
+            <ns2:Data name="moves">
+                <ns2:value>1013</ns2:value>
+            </ns2:Data>
+        </ns2:ExtendedData>
         <ns2:Folder>
             <ns2:name>Folder</ns2:name>
             <ns2:open>1</ns2:open>
@@ -3198,7 +3206,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:23.161</ns2:when>
+                <ns2:when>2020-01-15T20:08:15.009</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3207,16 +3215,34 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:23.161</ns2:when>
+                <ns2:when>2020-01-15T20:08:15.009</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
+                <ns2:coordinates>35.195224052340706,32.10575624080796</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:23.161</ns2:when>
+                <ns2:when>2020-01-15T20:08:15.009</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19889653419278,32.10554187503608</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:16.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:16.010</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3225,25 +3251,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:23.161</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:23.161</ns2:when>
+                <ns2:when>2020-01-15T20:08:16.010</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.193755432626695,32.10604141163514</ns2:coordinates>
+                <ns2:coordinates>35.195803162811075,32.10564379140374</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:24.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:17.010</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3252,16 +3269,34 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:24.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:17.010</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
+                <ns2:coordinates>35.19038634163924,32.10748920705224</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:24.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:17.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19268209154522,32.10644094926273</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:18.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:18.010</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3270,7 +3305,106 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:24.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:18.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19050397246721,32.1074354958743</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:19.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:19.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:19.010</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.190630973346046,32.10737750625611</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:20.040</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:20.040</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:20.040</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.193014805984376,32.10628902918572</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:21.052</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:21.052</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:21.052</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19627321850204,32.10555251782969</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:22.052</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:22.052</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3279,16 +3413,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:24.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:22.052</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.191499493150104,32.10698093315919</ns2:coordinates>
+                <ns2:coordinates>35.19527435336786,32.10574647355141</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:25.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:23.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3297,43 +3431,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:25.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:23.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
+                <ns2:coordinates>35.18893516072167,32.10655929420479</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:25.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:25.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:25.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:23.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.189465240621296,32.10760729693854</ns2:coordinates>
+                <ns2:coordinates>35.19232575304575,32.10660365627485</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:26.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:24.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3342,43 +3458,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:26.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:24.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
+                <ns2:coordinates>35.18893516072167,32.10655929420479</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:26.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:26.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:26.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:24.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.18781202536098,32.10375294869658</ns2:coordinates>
+                <ns2:coordinates>35.190091956077204,32.10762362585706</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:27.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:25.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3387,25 +3485,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:27.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:27.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:27.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:25.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3414,34 +3494,52 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:27.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:25.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.19431917697215,32.10204690220968</ns2:coordinates>
+                <ns2:coordinates>35.187991151609715,32.10469292626535</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:28.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:26.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
+                <ns2:coordinates>35.197656770719604,32.10191878639921</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:28.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:26.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
+                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:28.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:26.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.189077653475906,32.103621164996014</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:27.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20539663533063,32.10283686555705</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:27.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3450,43 +3548,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:28.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:28.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:27.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20348640299944,32.10310536838794</ns2:coordinates>
+                <ns2:coordinates>35.20004896705904,32.102448871224325</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:29.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:29.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:29.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:28.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3495,7 +3566,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:29.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:28.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#yellowI</ns2:styleUrl>
             <ns2:Point>
@@ -3504,34 +3575,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:29.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:28.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20762219044238,32.10328601720034</ns2:coordinates>
+                <ns2:coordinates>35.20661437699535,32.10266569942247</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:30.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199963710098416,32.105723673136964</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:30.162</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:30.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:29.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3540,7 +3593,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:30.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:29.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#yellowI</ns2:styleUrl>
             <ns2:Point>
@@ -3549,25 +3602,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:30.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:29.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.206273745135384,32.10592617285157</ns2:coordinates>
+                <ns2:coordinates>35.20726920618749,32.10519443958618</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:31.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:30.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.1992728373109,32.105605979924384</ns2:coordinates>
+                <ns2:coordinates>35.19974476565152,32.105686374989176</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:31.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:30.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#yellowI</ns2:styleUrl>
             <ns2:Point>
@@ -3576,16 +3629,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:31.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:30.063</ns2:when>
             </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.19565793847981,32.10567199049591</ns2:coordinates>
+                <ns2:coordinates>35.20369932472696,32.106132303474105</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:31.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:31.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#yellowI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:31.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3594,34 +3656,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:31.162</ns2:when>
+                <ns2:when>2020-01-15T20:08:31.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20139841216621,32.10596808093317</ns2:coordinates>
+                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:32.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188500771222955,32.10570047767076</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:32.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:32.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.18867176864414,32.103663427809636</ns2:coordinates>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:32.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:32.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3630,25 +3683,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:32.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20103595448387,32.10266757695841</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:32.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:32.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.18930060494027,32.10728180139738</ns2:coordinates>
+                <ns2:coordinates>35.188611165840335,32.10591873507098</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:33.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:33.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:33.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3657,7 +3710,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:33.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:33.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.190648988600685,32.10315248938209</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:34.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:34.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3666,43 +3737,43 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:33.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20641810155373,32.10582006082121</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:33.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19879105430872,32.10552390607473</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:33.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:34.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.19341035835351,32.10610841680672</ns2:coordinates>
+                <ns2:coordinates>35.20758869156735,32.10313088594806</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:34.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:35.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20103595448387,32.10266757695841</ns2:coordinates>
+                <ns2:coordinates>35.19580080140219,32.10564424993287</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:34.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:35.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19945252489246,32.10563659049281</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:35.063</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2016888087167,32.10601755126051</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:36.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3711,7 +3782,7 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:34.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:36.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3720,34 +3791,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:34.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1881927905213,32.10509157962067</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:34.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:36.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.195428120652764,32.10571661562195</ns2:coordinates>
+                <ns2:coordinates>35.19465928422823,32.10586590526927</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:35.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20103595448387,32.10266757695841</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:35.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:37.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3756,34 +3809,25 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:35.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:37.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20762720554021,32.103309241813314</ns2:coordinates>
+                <ns2:coordinates>35.19948643614741,32.105642367423975</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:35.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19471584000002,32.10585492349089</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:35.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:37.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.18781524852256,32.10375261308444</ns2:coordinates>
+                <ns2:coordinates>35.187618750603754,32.10395666504781</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:36.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:38.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
@@ -3792,1204 +3836,16 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:36.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:38.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20762720554021,32.103309241813314</ns2:coordinates>
+                <ns2:coordinates>35.19948643614741,32.105642367423975</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:36.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19471584000002,32.10585492349089</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:36.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20772758437657,32.10377409009778</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:36.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20620457609041,32.1027233011609</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:37.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19471584000002,32.10585492349089</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:37.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:37.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18845483345132,32.10368601621626</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:37.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18826047412558,32.10370625390763</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:37.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2016888087167,32.10601755126051</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:38.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:38.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18845483345132,32.10368601621626</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:38.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18826047412558,32.10370625390763</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:38.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19845929540132,32.1054673894883</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:38.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18958953510896,32.10785303529412</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:39.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:39.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19845929540132,32.1054673894883</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:39.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207388955308204,32.10510641563492</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:39.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2077456438679,32.10385772250349</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:39.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.192793960453855,32.106389869023296</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:40.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:40.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207388955308204,32.10510641563492</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:40.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2077456438679,32.10385772250349</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:40.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20506922352873,32.10288288665838</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:40.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.205542163916036,32.10623748536531</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:41.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:41.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20506922352873,32.10288288665838</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:41.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19902740802062,32.10222250479474</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:41.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188229003301934,32.10370953081145</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:41.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20774059616972,32.10383434692029</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:42.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:42.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19902740802062,32.10222250479474</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:42.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188229003301934,32.10370953081145</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:42.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18808155803418,32.10487166569699</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:42.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20569904909154,32.10279435818788</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:43.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188229003301934,32.10370953081145</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:43.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18808155803418,32.10487166569699</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:43.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:43.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18873880208589,32.106171080301124</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:43.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.202124654011925,32.10290882099404</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:44.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:44.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19606025016497,32.10559387118773</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:44.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2006417463577,32.1058391795906</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:44.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19478760401131,32.105840988636096</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:44.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188618517064306,32.105933268923</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:45.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:45.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2006417463577,32.1058391795906</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:45.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19894727564384,32.10555051906505</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:45.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:45.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.194209233638254,32.105953294331115</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:46.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:46.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:46.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:46.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20761401412496,32.10324815317179</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:46.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19832835522426,32.105445083254246</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:47.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:47.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:47.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20364683663777,32.10612930766388</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:47.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20006580215869,32.10574106496766</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:47.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20721124263255,32.105237046839605</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:48.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:48.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:48.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207595005173225,32.10316012387275</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:48.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188001157436325,32.10373325529336</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:48.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19828471894326,32.105437649622196</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:49.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:49.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:49.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188001157436325,32.10373325529336</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:49.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19945576329546,32.10231742368882</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:49.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20774059616972,32.10383434692029</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:50.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:50.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188001157436325,32.10373325529336</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:50.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.190961281536296,32.10722668489161</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:50.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18833801560385,32.10537869913533</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:50.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19882593651877,32.10217786088986</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:51.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.190961281536296,32.10722668489161</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:51.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18887150156647,32.10643343587905</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:51.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:51.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18868575452149,32.10606620178649</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:51.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188333372347564,32.103698663370295</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:52.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:52.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20599750887011,32.10275240659165</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:52.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19164051497469,32.106916541464905</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:52.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19649251085382,32.105509936499246</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:52.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1883612242252,32.10542458410218</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:53.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:53.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20599750887011,32.10275240659165</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:53.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19649251085382,32.105509936499246</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:53.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:53.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19018495198048,32.107581163182985</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:54.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:54.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20599750887011,32.10275240659165</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:54.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:54.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.203454491148754,32.106118329352576</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:54.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:55.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20599750887011,32.10275240659165</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:55.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:55.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20603807913743,32.10274670402268</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:55.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20667501437979,32.10563121198505</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:55.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2016888087167,32.10601755126051</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:56.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:56.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:56.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1914392546487,32.10700843854128</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:56.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207735451024085,32.103810520063874</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:56.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20746249717514,32.10254648739496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:57.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:57.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:57.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1914392546487,32.10700843854128</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:57.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199287402526544,32.1022801167641</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:57.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19982632036826,32.1023995351267</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:58.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:58.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1914392546487,32.10700843854128</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:58.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19212571478341,32.106694995347176</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:58.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207176866256894,32.10526231587204</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:58.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207721769290046,32.10374716078587</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:59.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:59.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1914392546487,32.10700843854128</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:59.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19212571478341,32.106694995347176</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:59.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.194722673411654,32.10585359660576</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:40:59.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199231607135644,32.105598956183016</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:00.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:00.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20488856416207,32.10290828019328</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:00.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20076659206437,32.10586044760486</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:00.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18806827577325,32.10484540579585</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:00.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18831388115663,32.105330983750015</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:01.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:01.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20488856416207,32.10290828019328</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:01.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20076659206437,32.10586044760486</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:01.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20629325092514,32.102710836999464</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:01.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19652529423839,32.10550357074996</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:02.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:02.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20488856416207,32.10290828019328</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:02.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20629325092514,32.102710836999464</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:02.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18854799145871,32.1057938351744</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:02.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:38.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
@@ -4998,853 +3854,133 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:03.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:39.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
+                <ns2:coordinates>35.20641810155373,32.10582006082121</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:03.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:39.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20488856416207,32.10290828019328</ns2:coordinates>
+                <ns2:coordinates>35.1881927905213,32.10509157962067</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:03.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20629325092514,32.102710836999464</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:03.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207175066404524,32.105263638889</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:03.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:39.063</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.18925072232613,32.10718318019702</ns2:coordinates>
+                <ns2:coordinates>35.20015305772854,32.10575592933707</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:04.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:40.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
+                <ns2:coordinates>35.20641810155373,32.10582006082121</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:04.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:40.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20488856416207,32.10290828019328</ns2:coordinates>
+                <ns2:coordinates>35.1881927905213,32.10509157962067</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:04.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20629325092514,32.102710836999464</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:04.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207175066404524,32.105263638889</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:04.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:40.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.1945339556376,32.101982203476695</ns2:coordinates>
+                <ns2:coordinates>35.18933331401597,32.10734646938569</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:05.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:41.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.2047270943582,32.1061909644545</ns2:coordinates>
+                <ns2:coordinates>35.20641810155373,32.10582006082121</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:05.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18878674341159,32.10626586344689</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:05.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:41.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.188735167996434,32.1036568263434</ns2:coordinates>
+                <ns2:coordinates>35.20762720554021,32.103309241813314</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:05.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18827635715289,32.105256796333116</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:05.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:41.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.207570364657684,32.104973067117285</ns2:coordinates>
+                <ns2:coordinates>35.197216685807895,32.101821268344516</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:06.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18878674341159,32.10626586344689</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:06.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:42.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.188735167996434,32.1036568263434</ns2:coordinates>
+                <ns2:coordinates>35.19471584000002,32.10585492349089</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:06.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18827635715289,32.105256796333116</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:06.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:42.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20168748284531,32.10281194859373</ns2:coordinates>
+                <ns2:coordinates>35.20772758437657,32.10377409009778</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:06.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:42.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.19662825555936,32.105483578123696</ns2:coordinates>
+                <ns2:coordinates>35.20761446736252,32.104940648554894</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:07.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18827635715289,32.105256796333116</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:07.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:43.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20168748284531,32.10281194859373</ns2:coordinates>
+                <ns2:coordinates>35.19471584000002,32.10585492349089</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:07.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:43.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.20486934516269,32.10291098162162</ns2:coordinates>
+                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:07.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188650711831144,32.10599692008895</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:07.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18753053591606,32.10378225882353</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:08.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20168748284531,32.10281194859373</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:08.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20486934516269,32.10291098162162</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:08.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19978567149855,32.105693343479814</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:08.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2076530211858,32.103428792497496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:08.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19915744456321,32.10558632226319</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:09.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20168748284531,32.10281194859373</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:09.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20486934516269,32.10291098162162</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:09.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2076530211858,32.103428792497496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:09.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18787470124019,32.10374642256208</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:09.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.190793497498035,32.10730329642695</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:10.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20168748284531,32.10281194859373</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:10.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20486934516269,32.10291098162162</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:10.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.2076530211858,32.103428792497496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:10.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20631073260931,32.105898984479886</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:10.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19273360505952,32.10252453109139</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:11.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20631073260931,32.105898984479886</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:11.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19879315521934,32.10552426397408</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:11.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19038311036003,32.1074906824802</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:11.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.191192942281205,32.10712090674053</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:11.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20792948668281,32.10470908739496</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:12.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19038311036003,32.1074906824802</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:12.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.191192942281205,32.10712090674053</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:12.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.195778515284005,32.105648577364065</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:12.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.187954854933984,32.10462116535644</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:12.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19755624242129,32.10531355044836</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:13.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#yellowI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18865454663299,32.106004501743755</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:13.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19955693710558,32.10565437757173</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:13.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.204869790572474,32.10291091901468</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:13.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207309159882,32.1051650708356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:13.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18798679039962,32.10468430386691</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:14.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19955693710558,32.10565437757173</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:14.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.204869790572474,32.10291091901468</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:14.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207309159882,32.1051650708356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:14.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19754084861827,32.10189309931584</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:14.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.197528356739305,32.1053088</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:15.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.204869790572474,32.10291091901468</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:15.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207309159882,32.1051650708356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:15.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19754084861827,32.10189309931584</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:15.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18901037612832,32.10670799999773</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:15.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19212976687104,32.106693145131516</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:16.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.204869790572474,32.10291091901468</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:16.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207309159882,32.1051650708356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:16.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19754084861827,32.10189309931584</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:16.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20477771287497,32.106193853557</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:16.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.189093769283815,32.103619486935315</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:17.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207309159882,32.1051650708356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:17.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20477771287497,32.106193853557</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:17.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20628039123985,32.10592128750149</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:17.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.194420164909,32.10591233652265</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:17.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20757951379338,32.10308838423511</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:18.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.194420164909,32.10591233652265</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:18.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18786044615427,32.10374790687486</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:18.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188435349750044,32.10368804495932</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:18.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207615235873256,32.10325381101383</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:18.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199231607135644,32.105598956183016</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:19.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18786044615427,32.10374790687486</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:19.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188435349750044,32.10368804495932</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:19.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207615235873256,32.10325381101383</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:19.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.18811295237197,32.1037216146304</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:19.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.1886300688884,32.10595610763701</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:20.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.207615235873256,32.10325381101383</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:20.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20407897556914,32.103022076209356</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:20.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20618329871377,32.10272629191536</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:20.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20520993233227,32.10286310858664</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:20.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#Bus</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20182161861133,32.10284167162813</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:21.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188641067776885,32.10366662454164</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:21.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.19933282576376,32.105616199220705</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:21.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.188147218341754,32.103718046681614</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:21.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.20046516449321,32.10580909809472</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:21.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:43.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
@@ -5853,47 +3989,839 @@
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:22.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:44.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.188641067776885,32.10366662454164</ns2:coordinates>
+                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:22.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:44.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#greenI</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.188147218341754,32.103718046681614</ns2:coordinates>
+                <ns2:coordinates>35.18845483345132,32.10368601621626</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
             <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:22.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.199778894590004,32.10238902608739</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:22.163</ns2:when>
-            </ns2:TimeStamp>
-            <ns2:styleUrl>#greenI</ns2:styleUrl>
-            <ns2:Point>
-                <ns2:coordinates>35.203322658299804,32.106110804860776</ns2:coordinates>
-            </ns2:Point>
-        </ns2:Placemark>
-        <ns2:Placemark>
-            <ns2:TimeStamp>
-                <ns2:when>2020-01-15T16:41:22.163</ns2:when>
+                <ns2:when>2020-01-15T20:08:44.064</ns2:when>
             </ns2:TimeStamp>
             <ns2:styleUrl>#Bus</ns2:styleUrl>
             <ns2:Point>
-                <ns2:coordinates>35.192163173605366,32.10667789134913</ns2:coordinates>
+                <ns2:coordinates>35.19224112265213,32.10664229919023</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:45.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20153271909271,32.10277765462071</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:45.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19170485054009,32.1068871653306</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:45.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18898095862841,32.10363123336023</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:46.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19170485054009,32.1068871653306</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:46.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19845929540132,32.1054673894883</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:46.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20746249717514,32.10254648739496</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:47.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19170485054009,32.1068871653306</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:47.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19845929540132,32.1054673894883</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:47.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2010465855762,32.10590814572889</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:48.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207388955308204,32.10510641563492</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:48.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#yellowI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18827457014228,32.10525326329593</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:48.064</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18927334737718,32.10722791140712</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:49.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207388955308204,32.10510641563492</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:49.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2077456438679,32.10385772250349</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:49.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188019499475324,32.10474897185522</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:50.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207388955308204,32.10510641563492</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:50.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2077456438679,32.10385772250349</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:50.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20319591121872,32.1031462</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:51.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20506922352873,32.10288288665838</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:51.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19902740802062,32.10222250479474</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:51.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20628067463181,32.10592107918865</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:52.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19902740802062,32.10222250479474</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:52.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188229003301934,32.10370953081145</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:52.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20454462305776,32.10295662465833</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:53.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19902740802062,32.10222250479474</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:53.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188229003301934,32.10370953081145</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:53.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19597880064568,32.10154696638656</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:54.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#yellowI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18808155803418,32.10487166569699</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:54.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:54.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188707328883595,32.103659725094836</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:55.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:55.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19606025016497,32.10559387118773</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:55.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.193010475679856,32.10629100643743</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:56.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:56.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2006417463577,32.1058391795906</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:56.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19979744335117,32.10569534886659</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:57.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20729662934775,32.105174281651756</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:57.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:57.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19699343489161,32.10541266903044</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:58.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:58.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:58.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20727648424552,32.10518908970618</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:59.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20077659145133,32.10261010491672</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:59.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:08:59.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.1993199078705,32.102287319596606</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:00.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:00.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20364683663777,32.10612930766388</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:00.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207586397123855,32.10312026051982</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:01.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:01.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207595005173225,32.10316012387275</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:01.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20107450832144,32.105912902491134</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:02.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:02.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207595005173225,32.10316012387275</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:02.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.205190891204495,32.106217436123714</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:03.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18804434180092,32.1037287587155</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:03.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188001157436325,32.10373325529336</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:03.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20390411086359,32.10304665524495</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:04.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19945576329546,32.10231742368882</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:04.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.190961281536296,32.10722668489161</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:04.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18777764497076,32.103756528559416</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:05.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.190961281536296,32.10722668489161</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:05.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18833801560385,32.10537869913533</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:05.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2007807131525,32.1026110182411</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:06.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18887150156647,32.10643343587905</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:06.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:06.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18944920537344,32.107575594201656</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:07.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:07.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18806606857711,32.10372649641195</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:07.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18870093855242,32.106096221611686</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:08.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:08.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20599750887011,32.10275240659165</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:08.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19857835948633,32.102123000498274</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:09.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20314380459736,32.106100596606694</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:09.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19164051497469,32.106916541464905</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:09.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.2069340256307,32.10544082066035</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:10.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19164051497469,32.106916541464905</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:10.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:10.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.194565523688645,32.10588411132382</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:11.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19949122966196,32.10232528265188</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:11.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.203454491148754,32.106118329352576</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:11.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.18787971175422,32.10374590084162</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:12.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.203454491148754,32.106118329352576</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:12.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20667501437979,32.10563121198505</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:12.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20498554808206,32.102894648104325</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:13.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:13.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.1914392546487,32.10700843854128</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:13.077</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.20353514237066,32.10612293260179</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:14.102</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.188531176641455,32.10576059117766</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:14.102</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#greenI</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.207735451024085,32.103810520063874</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:TimeStamp>
+                <ns2:when>2020-01-15T20:09:14.102</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:styleUrl>#Bus</ns2:styleUrl>
+            <ns2:Point>
+                <ns2:coordinates>35.19170661490292,32.106886359708405</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
     </ns2:Document>

@@ -1768,10 +1768,20 @@ t = new Thread(new Runnable() {
 				
 				//g.ThreadPaint(game);
 				g.Play_Automaticly(s);
-				t.interrupt();
+//				try {
+//				t.wait();
+//				}catch (Exception e) {
+//					e.printStackTrace();
+//				}
 			}
 		});
+		if(!t.isAlive())
+		{
 		t.start();
+		}else
+		{
+			t.notify();
+		}
 	}
 	
 	

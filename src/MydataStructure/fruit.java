@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 import utils.Point3D;
 
-public class fruit {
+public class fruit implements fruitInterface {
 	static double EPS = 0.0000001;
 	graph g;
 	edge_data edge;
@@ -41,44 +41,58 @@ public class fruit {
 		this.value = val;
 		this.type = type;
 	}
+	@Override
 	public void setOccupied(boolean occupied)
 	{
 		this.occupied = occupied;
 	}
+	@Override
 	public boolean getOccupied()
 	{
 		return this.occupied;
 	}
+	@Override
 	public void setGraph(graph g)
 	{
 		this.g = g;
 	}
+	@Override
 	public void setType(int type)
 	{
 		this.type = type;
 	}
+	@Override
 	public int getType()
 	{
 		return type;
 	}
-	public edge_data getEdge() {
+	@Override
+	public edge_data getEdge()
+	{
 		return edge;
 	}
-	public void setEdge(edge_data edge) {
+	@Override
+	public void setEdge(edge_data edge)
+	{
 		this.edge = new edges(edge);
 	}
+	@Override
 	public Point3D getPos() {
 		return pos;
 	}
+	@Override
 	public void setPos(Point3D pos) {
 		this.pos = new Point3D(pos);
 	}
+	@Override
 	public int getValue() {
 		return value;
 	}
+	@Override
 	public void setValue(int value) {
 		this.value = value;
 	}
+	@Override
 	public void initFromJson(String json)
 	{
 		if(!json.isEmpty())
@@ -110,7 +124,7 @@ public class fruit {
 			}
 		}
 	}
-	public void findEdge()
+	private void findEdge()
 	{
 		if(g!=null)
 		{
@@ -135,12 +149,7 @@ public class fruit {
 							return;
 						}
 					}
-
-
-
 				}
-
-
 			}
 		}
 	}
