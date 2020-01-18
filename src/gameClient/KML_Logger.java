@@ -138,7 +138,7 @@ public class KML_Logger {
 			e.printStackTrace();		}
 	}
 
-	public void setFruits(String time)
+	public void setFruits(String time,String end)
 	{
 		//Placemark p = doc.createAndAddPlacemark();
 		//ArrayList<Placemark> currP = new ArrayList<Placemark>();
@@ -180,8 +180,9 @@ public class KML_Logger {
 					fr.setStyleUrl("#yellowI");
 				}
 				fr.createAndSetPoint().addToCoordinates(x, y);
-				fr.createAndSetTimeStamp().withWhen(time);
-				//currP.add(fr);
+//				fr.createAndSetTimeStamp().withWhen(time);
+				fr.createAndSetTimeSpan().withBegin(time).withEnd(end);
+				//fr.createAndSetTimeSpan().setEnd(time);
 				//	fr.setVisibility(false);
 			}
 
@@ -191,7 +192,7 @@ public class KML_Logger {
 			}
 		}
 	}
-	public void setBots(String time)
+	public void setBots(String time,String end)
 	{	
 		Icon BusIcon = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/bus.png");
 		Style busStyle = doc.createAndAddStyle();
@@ -211,7 +212,8 @@ public class KML_Logger {
 				Placemark bot = doc.createAndAddPlacemark();
 				bot.setStyleUrl("#Bus");
 				bot.createAndSetPoint().addToCoordinates(x, y);
-				bot.createAndSetTimeStamp().withWhen(time);
+				//bot.createAndSetTimeStamp().withWhen(time);
+				bot.createAndSetTimeSpan().withBegin(time).withEnd(end);
 			}
 			catch (Exception e) {
 				e.printStackTrace();

@@ -2,6 +2,8 @@ package gameClient;
 
 import java.awt.Color;
 import java.io.File;
+import java.time.LocalTime;
+import java.time.temporal.TemporalAmount;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -86,10 +88,15 @@ public class MyGameGUI  {
 					if(graph!=null)
 					{
 						try {
-							Thread.sleep(1000);
-							String time  = java.time.LocalDate.now()+"T"+java.time.LocalTime.now();
-							k.setFruits(time);
-							k.setBots(time);
+							long timeToSleep = 100;
+							Thread.sleep(timeToSleep);
+							String Starttime  = java.time.LocalDate.now()+"T"+java.time.LocalTime.now();
+							LocalTime test = LocalTime.now();
+							//test = test.plusSeconds(timeToSleep/1000);
+							test= test.plusNanos(timeToSleep*1000000);
+							String endTime = java.time.LocalDate.now()+"T"+test;
+							k.setFruits(Starttime,endTime);
+							k.setBots(Starttime,endTime);
 						}
 
 						catch (Exception e) {
@@ -117,7 +124,7 @@ public class MyGameGUI  {
 					game.move();
 					}
 					try {
-						Thread.sleep(100);
+						Thread.sleep(35);
 					}
 					catch (Exception e) {
 						e.printStackTrace();
