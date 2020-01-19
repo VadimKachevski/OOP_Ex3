@@ -49,6 +49,37 @@ When the time has reached 0.0 seconds the game will stop and a message with the 
 ![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/game%20end.png)
 
 
+Best resaults of games
+
+|game	|grade		|moves|
+|---|---|---|
+|0		|178		|292  |
+|1		|641		|826  |
+|2		|300		|291  |
+|3		|1110		|827  |
+|4		|484		|411  |
+|5		|917		|823  |
+|6		|85			|290  |
+|7		|479		|824  |
+|8		|157		|407  |
+|9		|631		|814  |
+|10		|235		|407  |
+|11		|2777		|812  |
+|12		|79			|288  |
+|13		|605		|816  |
+|14		|267		|405  |
+|15		|441		|817  |
+|16		|276		|405  |
+|17		|1458		|808  |
+|18		|40			|289  |
+|19		|392		|816  |
+|20		|310		|287  |
+|21		|435		|810  |
+|22		|285		|403  |
+|23		|1269		|806  |
+
+
+
 
 
 
