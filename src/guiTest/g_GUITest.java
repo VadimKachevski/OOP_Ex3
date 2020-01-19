@@ -99,24 +99,6 @@ class g_GUITest {
 	
 	static void testNewGUI()
 	{
-		//g_GUI_new qwe = new g_GUI_new();
-		
-		
-//		for (int i = 0; i < 24; i++) {
 			MyGameGUI ggnew = new MyGameGUI();
-//			System.out.println("game: "+i);
-//			ggnew.Play_Automaticly(i+"");
-//		}
-		
-	
-//		game_service game = Game_Server.getServer(2);
-//		String gug = game.getGraph();
-//		myDGraph gg = new myDGraph();
-//		gg.init(gug);
-//		KML_Logger k = new KML_Logger(gg);
-//		k.setGame(game);
-//		k.test();
-//		g_GUI_new ggnew = new g_GUI_new(g);
-		//System.out.println("asd");
 	}
 }
