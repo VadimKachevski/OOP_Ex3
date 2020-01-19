@@ -31,20 +31,19 @@ public class autoGame {
 	}
 	/**
 	 * this method receives a string which represents the scenario
-	 *  of the game (which level the user chose to play) and if it’s a 
+	 * of the game (which level the user chose to play) and if it’s a 
 	 * valid input it calls the startGame method for running the auto phase.
 	 * @param gameNumStr the level which was chosen
 	 */
 	public void play(String gameNumStr)
 	{
 		try
-		{
+		{  
 			int number = Integer.parseInt(gameNumStr);
 			if(number>=0 && number<=23)
 			{
 				mgg.gameInit(number);
 				startGame(number);				
-
 			}
 			else
 			{

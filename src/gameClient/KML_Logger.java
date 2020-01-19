@@ -32,10 +32,10 @@ public class KML_Logger {
 
 	game_service game;
 	graph g;
-	Kml k;
+	Kml k; 
 	Document doc;
 	/**
-	 * constructor - 
+	 * constructor 
 	 * @param g
 	 */
 	public KML_Logger(graph g) {
