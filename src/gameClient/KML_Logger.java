@@ -140,15 +140,12 @@ public class KML_Logger {
 
 	public void setFruits(String time,String end)
 	{
-		//Placemark p = doc.createAndAddPlacemark();
-		//ArrayList<Placemark> currP = new ArrayList<Placemark>();
 		Icon iconGreen = new Icon().withHref("http://maps.google.com/mapfiles/kml/paddle/grn-stars.png");
 		Style greenStyle = doc.createAndAddStyle();
 		greenStyle.withId("greenI").createAndSetIconStyle().withIcon(iconGreen).withScale(1.2);
 		Icon iconYellow = new Icon().withHref("http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png");
 		Style yelloStyle = doc.createAndAddStyle();
 		yelloStyle.withId("yellowI").createAndSetIconStyle().withIcon(iconYellow).withScale(1.2);
-
 		Icon testRmove = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png");
 		Style removeStyle = doc.createAndAddStyle();
 		removeStyle.withId("removeS").createAndSetIconStyle().withIcon(testRmove).withScale(0.0);
@@ -156,10 +153,6 @@ public class KML_Logger {
 		for (String json : frus) {
 			try {
 				JSONObject obj = new JSONObject(json);
-				//			JSONArray fruits = obj.getJSONArray("Fruit");
-				//			for (int i = 0; i < fruits.length(); i++)
-				//			{
-				//				JSONObject CurrFruit = (JSONObject)fruits.get(i);
 				JSONObject CurrFruit = (JSONObject) obj.get("Fruit");
 				String pos = CurrFruit.getString("pos");
 				String[] arr = pos.split(",");
@@ -170,7 +163,6 @@ public class KML_Logger {
 				int type = CurrFruit.getInt("type");
 
 				Placemark fr = doc.createAndAddPlacemark();
-				//			fr.withName("fru");
 				if(type == -1)
 				{
 					fr.setStyleUrl("#greenI");
@@ -180,10 +172,7 @@ public class KML_Logger {
 					fr.setStyleUrl("#yellowI");
 				}
 				fr.createAndSetPoint().addToCoordinates(x, y);
-//				fr.createAndSetTimeStamp().withWhen(time);
 				fr.createAndSetTimeSpan().withBegin(time).withEnd(end);
-				//fr.createAndSetTimeSpan().setEnd(time);
-				//	fr.setVisibility(false);
 			}
 
 			catch (Exception e) {

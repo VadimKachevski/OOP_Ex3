@@ -29,13 +29,9 @@ import MydataStructure.graph;
 import MydataStructure.myDGraph;
 import MydataStructure.node_data;
 import MydataStructure.robotInterface;
-import Server.Fruit;
 import Server.Game_Server;
-import Server.RobotG;
 import Server.game_service;
-import algorithms.Graph_Algo;
 import utils.Point3D;
-import utils.StdDrawGraphGUI;
 import utils.StdDraw_gameGUI;
 
 public class MyGameGUI  {
@@ -57,7 +53,7 @@ public class MyGameGUI  {
 	int botidtoMove;
 	KML_Logger k;
 
-	
+
 	public MyGameGUI(graph g)  {
 		// TODO Auto-generated constructor stub
 		this.graph = g;
@@ -66,17 +62,27 @@ public class MyGameGUI  {
 		initGUI();
 	}
 	public MyGameGUI() {
+
 		// TODO Auto-generated constructor stub
 		graph = new myDGraph();
 		this.fruits = new Hashtable<Point3D, fruitInterface>();
 		this.bots = new Hashtable<Integer, robotInterface>();
 		initGUI();
 	}
+	
+	/**
+	 * Sets the X and Y position of the mouse on click
+	 * @param xpos
+	 * @param ypos
+	 */
 	public void setXY(double xpos,double ypos)
 	{
 		this.x= xpos;
 		this.y = ypos;
 	}
+	/**
+	 * A KML thread to save the game status in a KML file every 100 miliseconds
+	 */
 	public void ThreadKML()
 	{
 		t = new Thread(new Runnable() {
@@ -109,32 +115,11 @@ public class MyGameGUI  {
 		});
 		t.start();
 	}
-
-	public synchronized void ThreadMove()
-	{
-		r = new Thread(new Runnable() {
-
-			@Override
-			public synchronized void run() {
-				// TODO Auto-generated method stub
-				while(game.isRunning())
-				{
-					if(game.isRunning())
-					{
-					game.move();
-					}
-					try {
-						Thread.sleep(35);
-					}
-					catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-				r.interrupt();
-			}
-		});
-		r.start();
-	}
+	
+	/**
+	 * Initiates the GUI and preparing it work with a given graph
+	 * Setting canvas size, enabling double buffering, building a graph, building the KML file base and setting the scale.
+	 */
 	private void initGUI()
 	{
 		if(StdDraw_gameGUI.getDrawed() == false)
@@ -174,7 +159,10 @@ public class MyGameGUI  {
 			paint();
 		}
 	}
-
+	
+	/**
+	 * 
+	 */
 	public void paint()
 	{
 		StdDraw_gameGUI.clear();
@@ -252,27 +240,10 @@ public class MyGameGUI  {
 	}
 	public void Play_manual(String fromS)
 	{
-		try
-		{
-			int number = Integer.parseInt(fromS);
-			if(number>=0 && number<=23)
-			{
-				gameInit(number);
-				playSolo(game);				
-
-			}
-			else
-			{
-				JFrame jinput = new JFrame();
-				JOptionPane.showMessageDialog(jinput,"Bad input");
-				jinput.dispose();
-			}
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
+		manualGame mG = new manualGame(this);
+		mG.play(fromS);
 	}
-	private void gameInit(int gameNum)
+	public void gameInit(int gameNum)
 	{
 		StdDraw_gameGUI.clear();
 		StdDraw_gameGUI.show();
@@ -378,242 +349,10 @@ public class MyGameGUI  {
 			e.printStackTrace();
 		}
 	}
-	private void playSolo(game_service game)
-	{
-		game.startGame();
-		while(game.isRunning()) {
-			timeGame = game.timeToEnd()/1000;
-			moveRobotsManual(game);
-		}
-		String results = game.toString();
-		System.out.println("Game Over: "+results);
-
-
-	}
-	private void moveRobotsManual(game_service game)
-	{
-		List<String> log = game.move();
-		if(log!=null)
-		{
-			long t = game.timeToEnd();
-			int dest = nextNodeManual(game);
-			if(dest!= -1)
-			{
-				robotInterface b = bots.get(botidtoMove);
-				if(b!=null)
-				{
-
-					System.out.println(botidtoMove);
-					System.out.println(b.getPos().toString());
-					game.chooseNextEdge(b.getId(), dest);
-					game.move();
-
-				}
-			}
-			Iterator<String> f_iter = game.getFruits().iterator();
-			fruits.clear();
-			if(f_iter.hasNext())
-			{
-				while(f_iter.hasNext())
-				{
-					String json = f_iter.next();
-					fruit n = new fruit(graph);
-					n.initFromJson(json);
-					fruits.put(n.getPos(),n);
-				}
-
-			}
-			List<String> botsStr = game.getRobots();
-			for (String string : botsStr) {
-				bot ber = new bot();
-				ber.setGrap(graph);
-				ber.botFromJSON(string);
-
-				bots.put(ber.getId(), ber);
-			}
-			paint();
-		}
-	}
-	private int nextNodeManual(game_service game)
-	{
-		if(isBotChooser)
-		{
-			Set<Integer> sss =bots.keySet();
-			for (Integer integer : sss) {
-				robotInterface b = bots.get(integer);
-				Point3D p = b.getPos();
-				double dist = p.distance2D(new Point3D(x, y));
-				if(dist <= (maxx-minx)*0.006)
-				{
-					x = 0;
-					y = 0;
-					botidtoMove = integer;
-					isBotChooser= false;
-					System.out.println("Bot is choosen " + botidtoMove);
-					return -1;
-				}
-			}
-			return -1;
-
-		}
-		else
-		{
-			Collection<node_data> nd = graph.getV();
-			for (node_data node_data : nd) {
-				Point3D p = node_data.getLocation();
-				double dist = p.distance2D(new Point3D(x, y));
-				if(dist <= (maxx-minx)*0.005)
-				{
-					x = 0;
-					y = 0;
-					node_data src = bots.get(botidtoMove).getCurrNode();
-					Collection<edge_data> cE = graph.getE(src.getKey());
-					for (edge_data edgess : cE) {
-						if(edgess.getDest() == node_data.getKey())
-						{
-							isBotChooser = true;
-							System.out.println("Node is choosen "+ node_data.getKey());
-							return node_data.getKey();
-						}
-					}
-					return -1;
-				}
-			}
-			return -1;
-		}
-	}
 
 	public void Play_Automaticly(String S)
 	{
-		try
-		{
-			int number = Integer.parseInt(S);
-			if(number>=0 && number<=23)
-			{
-				gameInit(number);
-				playAuto(game,number);				
-
-			}
-			else
-			{
-				JFrame jinput = new JFrame();
-				JOptionPane.showMessageDialog(jinput,"Bad input");
-				jinput.dispose();
-			}
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	private synchronized void playAuto(game_service game2,int numberOfGame) {
-		game.startGame();
-		k.setGame(game);
-		ThreadKML();
-		ThreadMove();
-		
-		while(game.isRunning()) {
-			timeGame = game.timeToEnd()/1000;
-			moveRobotsAuto(game);
-			//game.move();
-		}
-		
-		
-		String results = game.toString();
-		
-		k.saveToFile(""+numberOfGame,results);
-		System.out.println("Game Over: "+results);
-
-	}
-	private void moveRobotsAuto(game_service game)  
-	{
-		long t = game.timeToEnd();
-		ArrayList<robotInterface> botsToMove = new ArrayList<robotInterface>();
-		ArrayList<fruitInterface> fruitsWithoutBots = new ArrayList<fruitInterface>();
-		Set<Integer> botS = bots.keySet();
-		for (Integer integer : botS) {
-			robotInterface b = bots.get(integer);
-			if(b.getPath() == null)
-			{
-				botsToMove.add(b);
-			}
-		}
-		Set<Point3D> fruitSet = fruits.keySet();
-		for (Point3D point3d : fruitSet) {
-			fruitInterface currF = fruits.get(point3d);
-			if(!currF.getOccupied())
-			{
-				fruitsWithoutBots.add(currF);
-			}
-		}
-		Graph_Algo GA = new Graph_Algo(graph);
-		while(!botsToMove.isEmpty() && !fruitsWithoutBots.isEmpty())
-		{
-			int srcIndex = 0;
-			robotInterface SrcFrom=null;
-			fruitInterface DestTo=null;
-			int destIndex =0;
-			double dist = Integer.MAX_VALUE;
-			for(int i=0;i< botsToMove.size();i++)
-			{
-				for(int j=0;j<fruitsWithoutBots.size();j++)
-				{
-					if(GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey()	, fruitsWithoutBots.get(j).getEdge().getSrc()) + GA.shortestPathDist(fruitsWithoutBots.get(j).getEdge().getSrc()	, fruitsWithoutBots.get(j).getEdge().getDest() ) < dist)
-					{
-						srcIndex = i;
-						destIndex = j;
-						SrcFrom = botsToMove.get(i);
-						DestTo = fruitsWithoutBots.get(j);
-						dist = GA.shortestPathDist(botsToMove.get(i).getCurrNode().getKey()	, fruitsWithoutBots.get(j).getEdge().getSrc()) + GA.shortestPathDist(fruitsWithoutBots.get(j).getEdge().getSrc()	, fruitsWithoutBots.get(j).getEdge().getDest() );
-					}
-				}
-			}
-			List<node_data> path = GA.shortestPath(SrcFrom.getCurrNode().getKey(), DestTo.getEdge().getSrc());
-			path.add(graph.getNode(DestTo.getEdge().getDest()));
-			path.remove(0);
-			SrcFrom.setPath(path);
-			botsToMove.remove(srcIndex);
-			DestTo.setOccupied(true);
-			fruitsWithoutBots.remove(destIndex);
-		}
-		for (Integer integer : botS) {
-			robotInterface b = bots.get(integer);
-			if(b.getPath() != null)
-			{
-				if(b.getCurrNode().getLocation().distance2D(b.getPos())<= 0.000001)
-				{
-					List<node_data> path = b.getPath();
-					game.chooseNextEdge(b.getId(), path.get(0).getKey());
-					b.setCurrNode(path.get(0));
-					path.remove(0);
-					if(path.size() == 0)
-					{
-						b.setPath(null);
-					}
-				}
-			}
-		}
-		Iterator<String> f_iter = game.getFruits().iterator();
-		fruits.clear();
-		if(f_iter.hasNext())
-		{
-			while(f_iter.hasNext())
-			{
-				String json = f_iter.next();
-				fruit n = new fruit(graph);
-				n.initFromJson(json);
-				fruits.put(n.getPos(),n);
-			}
-
-		}
-		List<String> botsStr = game.getRobots();
-		for (String string : botsStr) {
-			bot ber = new bot();
-			ber.setGrap(graph);
-			ber.botFromJSON(string);
-
-			bots.put(ber.getId(), ber);
-		}
-		paint();
-
+		autoGame aG = new autoGame(this);
+		aG.play(S);
 	}
 }

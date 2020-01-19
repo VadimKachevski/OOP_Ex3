@@ -24,8 +24,6 @@ class g_GUITest {
 	public static void main(String[] args) {
 		testNewGUI();
 	}
-	
-	
 	@Test
 	static void testDraw() {
 		//fail("Not yet implemented");
