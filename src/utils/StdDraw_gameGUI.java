@@ -488,7 +488,7 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 
 	static boolean drawed=false;
 	static MyGameGUI g;
-	
+
 	/**
 	 *  The color black.
 	 */
@@ -720,51 +720,22 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		frame.requestFocusInWindow();
 		frame.setVisible(true);
 	}
-
-	// create the menu bar (changed to private)
 	private static JMenuBar createMenuBar() {
 		JMenuBar menuBar = new JMenuBar();
 		JMenu menu = new JMenu("Play");
-		JMenu menu2 = new JMenu("Options");
 		menuBar.add(menu);
-		menuBar.add(menu2);
-		//JMenuItem menuItem1 = new JMenuItem(" Save...   ");
-		
 		JMenuItem item1 = new JMenuItem("Play manual");
 		JMenuItem item2 = new JMenuItem("Play Automaticly");
-		
-		
-		JMenuItem item3 = new JMenuItem("Play");
-		JMenuItem item4 = new JMenuItem("Stop");
-		JMenuItem item5 = new JMenuItem("---------");
-		JMenuItem item6 = new JMenuItem("---------");
-		JMenuItem item7 = new JMenuItem("---------");
-		
-		
-		
 		item1.addActionListener(std);
 		item2.addActionListener(std);
-		item3.addActionListener(std);
-		item4.addActionListener(std);
-		item5.addActionListener(std);
-		item6.addActionListener(std);
-		item7.addActionListener(std);
-		
-//		item1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
-//				Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
 		menu.add(item1);
 		menu.add(item2);
-		menu2.add(item3);
-		menu2.add(item4);
-		menu2.add(item5);
-		menu2.add(item6);
-		menu2.add(item7);
 		return menuBar;
 	}
 	public static void CreateMenu()
 	{
 		JMenuBar menuBar = new JMenuBar();
-		
+
 	}
 
 
@@ -1694,19 +1665,13 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 	{
 		g= theG;
 	}
-	
-	
+
+
 	/**
 	 * This method cannot be called directly.
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-//		FileDialog chooser = new FileDialog(StdDraw.frame, "Use a .png or .jpg extension", FileDialog.SAVE);
-//		chooser.setVisible(true);
-//		String filename = chooser.getFile();
-//		if (filename != null) {
-//			StdDraw.save(chooser.getDirectory() + File.separator + chooser.getFile());
-//		}
 		String act = e.getActionCommand();	
 		if(act.equals("Play manual"))
 		{
@@ -1721,70 +1686,35 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			String fromS = JOptionPane.showInputDialog(jinput,"Which game to run? 0-23");
 			jinput.dispose();
 			threadauto(fromS);
-		}
-//		switch (act) {
-//		case "Play manual":
-//			g.Play_manual();
-//			break;
-//		case "Play Automaticly":g.Play_Automaticly();
-//		break;
-////		case "play" :g.play();
-////		break;
-//		case "stop" : g.stop();
-//		break;
-////		case "find Shortest path distance" : g.ShortestPathDist();
-////		break;
-////		case "TSP enter all the nodes" : g.TSPEnterNodes();
-////		break;
-////		case "TSP from file" : g.TSPfromFile();
-////		break;
-//		default:
-//			break;
-//		}
-		
-		
+		}	
 	}
 	static Thread t;
 	public static void threadman(String s)
 	{
 		t = new Thread(new Runnable() {
-			
+
 			@Override
 			public void run() {
-				
-				//g.ThreadPaint(game);
 				g.Play_manual(s);
-				t.interrupt();
 			}
 		});
 		t.start();
 	}
+	static Thread t2;
 	public static void threadauto(String s)
 	{
-t = new Thread(new Runnable() {
-			
+		
+		t2 = new Thread(new Runnable() {
+
 			@Override
 			public void run() {
-				
-				//g.ThreadPaint(game);
 				g.Play_Automaticly(s);
-//				try {
-//				t.wait();
-//				}catch (Exception e) {
-//					e.printStackTrace();
-//				}
 			}
 		});
-		if(!t.isAlive())
-		{
-		t.start();
-		}else
-		{
-			t.notify();
-		}
+		t2.start();
 	}
-	
-	
+
+
 	/***************************************************************************
 	 *  Mouse interactions.
 	 ***************************************************************************/
@@ -1842,7 +1772,7 @@ t = new Thread(new Runnable() {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		g.setXY(StdDraw_gameGUI.userX(e.getX()), StdDraw_gameGUI.userY(e.getY()));
-		
+
 	}
 
 	/**

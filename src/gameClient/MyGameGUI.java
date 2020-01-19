@@ -71,7 +71,7 @@ public class MyGameGUI  {
 		this.bots = new Hashtable<Integer, robotInterface>();
 		initGUI();
 	}
-	
+
 	/**
 	 * Sets the X and Y position of the mouse on click
 	 * @param xpos
@@ -117,7 +117,7 @@ public class MyGameGUI  {
 		});
 		t.start();
 	}
-	
+
 	/**
 	 * Initiates the GUI and preparing it work with a given graph
 	 * Setting canvas size, enabling double buffering, building a graph, building the KML file base and setting the scale.
@@ -161,7 +161,7 @@ public class MyGameGUI  {
 			paint();
 		}
 	}
-	
+
 	/**
 	 * 
 	 */
@@ -244,8 +244,17 @@ public class MyGameGUI  {
 	}
 	public void Play_manual(String fromS)
 	{
-		manualGame mG = new manualGame(this);
-		mG.play(fromS);
+		if(game != null && game.isRunning())
+		{
+			JFrame jinput = new JFrame();
+			JOptionPane.showMessageDialog(jinput,"Game is allready running please wait untill the end");
+			jinput.dispose();
+		}
+		else
+		{
+			manualGame mG = new manualGame(this);
+			mG.play(fromS);
+		}
 	}
 	public void gameInit(int gameNum)
 	{
@@ -356,7 +365,16 @@ public class MyGameGUI  {
 
 	public void Play_Automaticly(String S)
 	{
-		autoGame aG = new autoGame(this);
-		aG.play(S);
+		if(game!=null && game.isRunning())
+		{
+			JFrame jinput = new JFrame();
+			JOptionPane.showMessageDialog(jinput,"Game is allready running please wait untill the end");
+			jinput.dispose();
+		}
+		else
+		{
+			autoGame aG = new autoGame(this);
+			aG.play(S);
+		}
 	}
 }
