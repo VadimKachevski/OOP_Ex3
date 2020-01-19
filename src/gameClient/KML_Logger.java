@@ -212,22 +212,17 @@ public class KML_Logger {
 	}
 	private Hashtable<String, Integer> reader(Feature feat)
 	{
-		//ArrayList<Integer> ans = new ArrayList<Integer>();
 		Hashtable<String, Integer> ans = new Hashtable<String, Integer>();
-		System.out.println("Test1");
 		if(feat!=null)
 		{
-			System.out.println("Test2");
 			if(feat instanceof Document)
 			{
-				System.out.println("Test3");
 				Document document = (Document) feat;
 				ExtendedData  dd = document.getExtendedData();
 				if(dd!=null)
 				{
 					List<Data> ld = dd.getData();
 					for (Data data : ld) {
-						// System.out.println(data.getName()+" :" + data.getValue());
 						ans.put(data.getName(), Integer.parseInt(data.getValue()));
 					}
 				}

@@ -54,7 +54,7 @@ public class autoGame {
 		mgg.ThreadKML();
 		Long timeTestThread = mgg.game.timeToEnd();
 		while(mgg.game.isRunning()) {
-			if(timeTestThread - mgg.game.timeToEnd() > 100)
+			if(timeTestThread - mgg.game.timeToEnd() > 70)
 			{
 				mgg.game.move();
 				timeTestThread = mgg.game.timeToEnd();
@@ -74,18 +74,18 @@ public class autoGame {
 		String results = mgg.game.toString();
 		mgg.k.saveToFile(""+numberOfGame,results);
 		System.out.println("Game Over: "+results);
-		try {
-			JFrame jinput = new JFrame();
-			JSONObject obj = new JSONObject(results);
-			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
-			int grade = CurrRes.getInt("grade");
-			int moves = CurrRes.getInt("moves");
-			JOptionPane.showMessageDialog(jinput,"The game ended \n The score : "+grade +"\n" +"Amount of moves: "+moves );
-			jinput.dispose();
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//			JFrame jinput = new JFrame();
+//			JSONObject obj = new JSONObject(results);
+//			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
+//			int grade = CurrRes.getInt("grade");
+//			int moves = CurrRes.getInt("moves");
+//			JOptionPane.showMessageDialog(jinput,"The game ended \n The score : "+grade +"\n" +"Amount of moves: "+moves );
+//			jinput.dispose();
+//		}
+//		catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 	private void move(game_service game)  
 	{

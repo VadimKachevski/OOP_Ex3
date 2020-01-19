@@ -102,10 +102,11 @@ class g_GUITest {
 		//g_GUI_new qwe = new g_GUI_new();
 		
 		
-		for (int i = 0; i < 24; i++) {
+//		for (int i = 0; i < 24; i++) {
 			MyGameGUI ggnew = new MyGameGUI();
-			ggnew.Play_Automaticly(i+"");
-		}
+//			System.out.println("game: "+i);
+//			ggnew.Play_Automaticly(i+"");
+//		}
 		
 	
 //		game_service game = Game_Server.getServer(2);
