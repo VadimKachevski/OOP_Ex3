@@ -59,6 +59,15 @@ public class autoGame {
 				mgg.game.move();
 				timeTestThread = mgg.game.timeToEnd();
 			}
+			try {
+			String results = mgg.game.toString();
+			JSONObject obj = new JSONObject(results);
+			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
+			mgg.val = CurrRes.getInt("grade");
+			mgg.moveM = CurrRes.getInt("moves");
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
 			mgg.timeGame = mgg.game.timeToEnd()/1000;
 			move(mgg.game);
 		}

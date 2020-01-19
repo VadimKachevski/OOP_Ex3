@@ -48,6 +48,8 @@ public class MyGameGUI  {
 	double x=0;
 	double y=0;
 	double timeGame=0;
+	int val=0;
+	int moveM=0;
 	game_service game;
 	boolean isBotChooser = true;
 	int botidtoMove;
@@ -168,6 +170,8 @@ public class MyGameGUI  {
 		StdDraw_gameGUI.clear();
 		StdDraw_gameGUI.setPenColor(Color.black);
 		StdDraw_gameGUI.text(maxx, maxy, "Seconds:"+timeGame);
+		StdDraw_gameGUI.text(maxx, maxy-(maxy-miny)*0.03, "Value: " +val);
+		StdDraw_gameGUI.text(maxx, maxy-(maxy-miny)*0.06, "Moves: " +moveM);
 		if(graph!= null)
 		{
 			Collection<node_data> nodes = graph.getV();

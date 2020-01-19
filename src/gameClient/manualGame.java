@@ -54,11 +54,29 @@ public class manualGame {
 	private void startGame(int numberOfGame)
 	{
 		mgg.game.startGame();
+		mgg.k.setGame(mgg.game);
+		mgg.ThreadKML();
+		Long timeTestThread = mgg.game.timeToEnd();
 		while(mgg.game.isRunning()) {
+			if(timeTestThread - mgg.game.timeToEnd() > 100)
+			{
+				mgg.game.move();
+				timeTestThread = mgg.game.timeToEnd();
+			}
+			try {
+			String results = mgg.game.toString();
+			JSONObject obj = new JSONObject(results);
+			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
+			mgg.val = CurrRes.getInt("grade");
+			mgg.moveM = CurrRes.getInt("moves");
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
 			mgg.timeGame = mgg.game.timeToEnd()/1000;
 			move(mgg.game);
 		}
 		String results = mgg.game.toString();
+		mgg.k.saveToFile(""+numberOfGame,results);
 		System.out.println("Game Over: "+results);
 		try {
 			JFrame jinput = new JFrame();
@@ -75,9 +93,9 @@ public class manualGame {
 	}
 	private void move(game_service game)
 	{
-		List<String> log = game.move();
-		if(log!=null)
-		{
+	//	List<String> log = game.move();
+//		if(log!=null)
+//		{
 			int dest = nextNodeManual(game);
 			if(dest!= -1)
 			{
@@ -88,7 +106,7 @@ public class manualGame {
 					System.out.println(mgg.botidtoMove);
 					System.out.println(b.getPos().toString());
 					game.chooseNextEdge(b.getId(), dest);
-					game.move();
+				//	game.move();
 
 				}
 			}
@@ -114,7 +132,7 @@ public class manualGame {
 				mgg.bots.put(ber.getId(), ber);
 			}
 			mgg.paint();
-		}
+		//}
 	}
 	private int nextNodeManual(game_service game)
 	{

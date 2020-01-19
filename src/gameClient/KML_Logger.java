@@ -52,9 +52,9 @@ public class KML_Logger {
 		folder.withName("Folder").withOpen(true);
 
 
-		Icon icon = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/parking_lot.png");
+		Icon icon = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png");
 		Style placeMarkStyle = doc.createAndAddStyle();
-		placeMarkStyle.withId("placemarkid").createAndSetIconStyle().withIcon(icon).withScale(1.2);
+		placeMarkStyle.withId("placemarkid").createAndSetIconStyle().withIcon(icon).withScale(1.2).withColor("ffff0000");
 
 		Collection<node_data> nd = g.getV();
 		for (node_data node_data : nd) {
@@ -140,15 +140,16 @@ public class KML_Logger {
 
 	public void setFruits(String time,String end)
 	{
-		Icon iconGreen = new Icon().withHref("http://maps.google.com/mapfiles/kml/paddle/grn-stars.png");
+		// - https://i.ibb.co/1Qt9xfw/kiwi.png
+		Icon iconGreen = new Icon().withHref("https://i.ibb.co/BcqrFGX/strawberry.png");
 		Style greenStyle = doc.createAndAddStyle();
 		greenStyle.withId("greenI").createAndSetIconStyle().withIcon(iconGreen).withScale(1.2);
-		Icon iconYellow = new Icon().withHref("http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png");
+		Icon iconYellow = new Icon().withHref("https://i.ibb.co/1Qt9xfw/kiwi.png");
 		Style yelloStyle = doc.createAndAddStyle();
 		yelloStyle.withId("yellowI").createAndSetIconStyle().withIcon(iconYellow).withScale(1.2);
-		Icon testRmove = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png");
-		Style removeStyle = doc.createAndAddStyle();
-		removeStyle.withId("removeS").createAndSetIconStyle().withIcon(testRmove).withScale(0.0);
+//		Icon testRmove = new Icon().withHref("https://raw.githubusercontent.com/VadimKachevski/OOP_Ex3/master/images/kiwi.png");
+//		Style removeStyle = doc.createAndAddStyle();
+//		removeStyle.withId("removeS").createAndSetIconStyle().withIcon(testRmove).withScale(0.0);
 		List<String> frus = game.getFruits();
 		for (String json : frus) {
 			try {
@@ -183,7 +184,7 @@ public class KML_Logger {
 	}
 	public void setBots(String time,String end)
 	{	
-		Icon BusIcon = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/bus.png");
+		Icon BusIcon = new Icon().withHref("https://i.ibb.co/BLpqcfY/robot3.png");
 		Style busStyle = doc.createAndAddStyle();
 		busStyle.withId("Bus").createAndSetIconStyle().withIcon(BusIcon).withScale(1.2);
 		List<String> robos = game.getRobots();
