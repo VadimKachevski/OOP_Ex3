@@ -125,7 +125,7 @@ public class manualGame {
 				robotInterface b = mgg.bots.get(integer);
 				Point3D p = b.getPos();
 				double dist = p.distance2D(new Point3D(mgg.x, mgg.y));
-				if(dist <= (mgg.maxx-mgg.minx)*0.006)
+				if(dist <= (mgg.maxx-mgg.minx)*0.008)
 				{
 					mgg.x = 0;
 					mgg.y = 0;
@@ -143,7 +143,7 @@ public class manualGame {
 			for (node_data node_data : nd) {
 				Point3D p = node_data.getLocation();
 				double dist = p.distance2D(new Point3D(mgg.x, mgg.y));
-				if(dist <= (mgg.maxx-mgg.minx)*0.005)
+				if(dist <= (mgg.maxx-mgg.minx)*0.008)
 				{
 					mgg.x = 0;
 					mgg.y = 0;

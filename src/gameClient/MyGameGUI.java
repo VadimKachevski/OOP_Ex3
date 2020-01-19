@@ -166,6 +166,7 @@ public class MyGameGUI  {
 	public void paint()
 	{
 		StdDraw_gameGUI.clear();
+		StdDraw_gameGUI.setPenColor(Color.black);
 		StdDraw_gameGUI.text(maxx, maxy, "Seconds:"+timeGame);
 		if(graph!= null)
 		{
@@ -215,13 +216,13 @@ public class MyGameGUI  {
 					fruitInterface currF = fruits.get(point3d);
 					if(currF.getType() == 1)
 					{
-						StdDraw_gameGUI.setPenColor(Color.GREEN);
+						StdDraw_gameGUI.picture(point3d.x(), point3d.y(),"images/kiwi.png");
 					}
 					else
 					{
-						StdDraw_gameGUI.setPenColor(Color.MAGENTA);
+						StdDraw_gameGUI.picture(point3d.x(), point3d.y(),"images/strawberry.png");
 					}
-					StdDraw_gameGUI.filledCircle(point3d.x(), point3d.y(),(maxx-minx)*0.006	);
+
 				}
 			}
 			if(!bots.isEmpty())
@@ -230,8 +231,7 @@ public class MyGameGUI  {
 				for (Integer integer : botset) {
 					robotInterface currB = bots.get(integer);
 					Point3D p = currB.getPos();
-					StdDraw_gameGUI.setPenColor(Color.BLACK);
-					StdDraw_gameGUI.filledCircle(p.x(), p.y(), (maxx-minx)*0.006);
+					StdDraw_gameGUI.picture(p.x(), p.y(),"images/robot3.png");
 				}
 			}
 
