@@ -78,9 +78,9 @@ Best resaults of games
 |22		|285		|403  |
 |23		|1269		|806  |
 
-Export as KML file;
+## Export as KML file
 
-
+![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/GE.JPG)
 
 
 
