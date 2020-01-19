@@ -40,7 +40,7 @@ After choosing a level the game will start running and the ‘robots’ will mov
 by a defined algorithm, on the top right side the seconds left for the game to finish will 
 be shown starting from 60 seconds..
 
-![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/game%20palying.png)
+![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/level21%20playing.jpg)
 
 
 
@@ -78,6 +78,7 @@ Best resaults of games
 |22		|285		|403  |
 |23		|1269		|806  |
 
+Export as KML file;
 
 
 
