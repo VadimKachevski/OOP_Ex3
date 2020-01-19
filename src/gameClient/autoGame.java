@@ -22,10 +22,19 @@ import utils.Point3D;
 public class autoGame {
 
 	MyGameGUI mgg;
+	/**
+	 * a constructor which gets an already build up object of MyGameGui.
+	 * @param mgg
+	 */
 	public autoGame(MyGameGUI mgg) {
-		// TODO Auto-generated constructor stub
 		this.mgg = mgg;
 	}
+	/**
+	 * this method receives a string which represents the scenario
+	 *  of the game (which level the user chose to play) and if it’s a 
+	 * valid input it calls the startGame method for running the auto phase.
+	 * @param gameNumStr the level which was chosen
+	 */
 	public void play(String gameNumStr)
 	{
 		try
@@ -48,6 +57,13 @@ public class autoGame {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * by a given of a valid number verified by the previous method,
+	 * this function starts the game by setting up the server and
+	 * starts the KML Thread which uploads to the KML information 
+	 * about the amount of moves and grades collected so far.
+	 * @param numberOfGame
+	 */
 	private void startGame(int numberOfGame) {
 		mgg.game.startGame();
 		mgg.k.setGame(mgg.game);
@@ -74,19 +90,14 @@ public class autoGame {
 		String results = mgg.game.toString();
 		mgg.k.saveToFile(""+numberOfGame,results);
 		System.out.println("Game Over: "+results);
-//		try {
-//			JFrame jinput = new JFrame();
-//			JSONObject obj = new JSONObject(results);
-//			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
-//			int grade = CurrRes.getInt("grade");
-//			int moves = CurrRes.getInt("moves");
-//			JOptionPane.showMessageDialog(jinput,"The game ended \n The score : "+grade +"\n" +"Amount of moves: "+moves );
-//			jinput.dispose();
-//		}
-//		catch (Exception e) {
-//			e.printStackTrace();
-//		}
+
 	}
+	/**
+	 * by receiving the server (which holds the data and updates it as
+	 * the game is running), this algorithm calculates the next step of
+	 * the robot and sends the server the information of which Bot to move and to which index.
+	 * @param game
+	 */
 	private void move(game_service game)  
 	{
 		long t = game.timeToEnd();

@@ -30,20 +30,29 @@ import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
 import utils.Point3D;
 public class KML_Logger {
 
-
 	game_service game;
 	graph g;
 	Kml k;
 	Document doc;
-
+	/**
+	 * constructor - 
+	 * @param g
+	 */
 	public KML_Logger(graph g) {
-		// TODO Auto-generated constructor stub
 		this.g = g;
 	}
+	/**
+	 * sets the game server
+	 * @param game
+	 */
 	public void setGame(game_service game)
 	{
 		this.game = game;
 	}
+	/**
+	 * this method creates and sets a KML document which through it,
+	 * it allows to build the graph for the KML file.
+	 */
 	public void BuildGraph()
 	{
 		k = new Kml();
@@ -79,6 +88,11 @@ public class KML_Logger {
 		}
 		//		saveToFile("test1");
 	}
+	/**
+	 * by a given name and result this function saves the file
+	 * @param nameS
+	 * @param resault
+	 */
 	public void saveToFile(String nameS,String resault)
 	{
 		try {
@@ -90,8 +104,6 @@ public class KML_Logger {
 			if(exists)
 			{
 				Kml prevKml = Kml.unmarshal(tmpDir);
-				// 	prevKml.unmarshal(new File("data/"+nameS+".kml"));
-				//Document docTest = prevKml.
 				Feature feat = prevKml.getFeature();
 
 				Hashtable<String, Integer> ans = reader(feat);
@@ -105,9 +117,6 @@ public class KML_Logger {
 				ExtendedData ed = doc.createAndSetExtendedData();
 				ed.createAndAddData(grade+"").setName("grade");
 				ed.createAndAddData(moves+"").setName("moves");
-
-
-
 
 				if(grade>prevGrade)
 				{
@@ -137,19 +146,20 @@ public class KML_Logger {
 		catch (Exception e) {
 			e.printStackTrace();		}
 	}
-
+	/**
+	 * by a given start string and the end of the string this method sets the
+	 *  fruit by its time of appearance as it will be shown in the KML file. 
+	 * @param time
+	 * @param end
+	 */
 	public void setFruits(String time,String end)
 	{
-		// - https://i.ibb.co/1Qt9xfw/kiwi.png
 		Icon iconGreen = new Icon().withHref("https://i.ibb.co/BcqrFGX/strawberry.png");
 		Style greenStyle = doc.createAndAddStyle();
 		greenStyle.withId("greenI").createAndSetIconStyle().withIcon(iconGreen).withScale(1.2);
 		Icon iconYellow = new Icon().withHref("https://i.ibb.co/1Qt9xfw/kiwi.png");
 		Style yelloStyle = doc.createAndAddStyle();
 		yelloStyle.withId("yellowI").createAndSetIconStyle().withIcon(iconYellow).withScale(1.2);
-//		Icon testRmove = new Icon().withHref("https://raw.githubusercontent.com/VadimKachevski/OOP_Ex3/master/images/kiwi.png");
-//		Style removeStyle = doc.createAndAddStyle();
-//		removeStyle.withId("removeS").createAndSetIconStyle().withIcon(testRmove).withScale(0.0);
 		List<String> frus = game.getFruits();
 		for (String json : frus) {
 			try {
@@ -177,11 +187,16 @@ public class KML_Logger {
 			}
 
 			catch (Exception e) {
-				// TODO: handle exception
 				e.printStackTrace();
 			}
 		}
 	}
+	/**
+	 * by a given start string and the end of the string this method 
+	 * sets the Bots by its time of appearance as it will be shown in the KML file.
+	 * @param time
+	 * @param end
+	 */
 	public void setBots(String time,String end)
 	{	
 		Icon BusIcon = new Icon().withHref("https://i.ibb.co/BLpqcfY/robot3.png");
@@ -202,7 +217,6 @@ public class KML_Logger {
 				Placemark bot = doc.createAndAddPlacemark();
 				bot.setStyleUrl("#Bus");
 				bot.createAndSetPoint().addToCoordinates(x, y);
-				//bot.createAndSetTimeStamp().withWhen(time);
 				bot.createAndSetTimeSpan().withBegin(time).withEnd(end);
 			}
 			catch (Exception e) {
@@ -210,6 +224,13 @@ public class KML_Logger {
 			}	
 		}
 	}
+	/**
+	 * this method allows us to have a record of the best result as it 
+	 * takes the result from the prior KML file and that’s how we keep 
+	 * track of the highest result so far.
+	 * @param feat
+	 * @return a Hashtable updated with highest results for each level
+	 */
 	private Hashtable<String, Integer> reader(Feature feat)
 	{
 		Hashtable<String, Integer> ans = new Hashtable<String, Integer>();
@@ -231,6 +252,5 @@ public class KML_Logger {
 		}
 		return ans;
 	}
-
 
 }

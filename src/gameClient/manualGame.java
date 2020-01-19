@@ -21,14 +21,20 @@ import utils.Point3D;
 public class manualGame {
 
 	MyGameGUI mgg;
-	//game_service game;
-	
-	
+	/**
+	 * a constructor which gets an already build up object
+	 * of MyGameGui and saves it as its own.
+	 * @param mgg
+	 */
 	public manualGame(MyGameGUI mgg) {
 		this.mgg = mgg;
-		//this.game = gs;
 	}
-	
+	/**
+	 * this method receives a string which represents the scenario of the
+	 *  game (which level the user chose to play) and if it’s a valid input 
+	 *  it calls the startGame method for running the auto phase.
+	 * @param gameNumStr
+	 */
 	public void play(String gameNumStr)
 	{
 		try
@@ -51,6 +57,13 @@ public class manualGame {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * by a given of a valid number verified by the previous method,
+	 *  this function starts the game by setting up the server and painting the game.
+	 *  In addition this method updates the valid position of the
+	 *  fruits and Bots as they change while the game is running by the user.
+	 * @param numberOfGame
+	 */
 	private void startGame(int numberOfGame)
 	{
 		mgg.game.startGame();
@@ -64,11 +77,11 @@ public class manualGame {
 				timeTestThread = mgg.game.timeToEnd();
 			}
 			try {
-			String results = mgg.game.toString();
-			JSONObject obj = new JSONObject(results);
-			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
-			mgg.val = CurrRes.getInt("grade");
-			mgg.moveM = CurrRes.getInt("moves");
+				String results = mgg.game.toString();
+				JSONObject obj = new JSONObject(results);
+				JSONObject CurrRes = (JSONObject) obj.get("GameServer");
+				mgg.val = CurrRes.getInt("grade");
+				mgg.moveM = CurrRes.getInt("moves");
 			}catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -91,49 +104,52 @@ public class manualGame {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * This method moves the Bot by using the assistance of the
+	 * next method (nextNodeManuel method), and sends it to the
+	 * server for updating the data. 
+	 */
 	private void move(game_service game)
 	{
-	//	List<String> log = game.move();
-//		if(log!=null)
-//		{
-			int dest = nextNodeManual(game);
-			if(dest!= -1)
+		int dest = nextNodeManual(game);
+		if(dest!= -1)
+		{
+			robotInterface b = mgg.bots.get(mgg.botidtoMove);
+			if(b!=null)
 			{
-				robotInterface b = mgg.bots.get(mgg.botidtoMove);
-				if(b!=null)
-				{
 
-					System.out.println(mgg.botidtoMove);
-					System.out.println(b.getPos().toString());
-					game.chooseNextEdge(b.getId(), dest);
-				//	game.move();
-
-				}
+				System.out.println(mgg.botidtoMove);
+				System.out.println(b.getPos().toString());
+				game.chooseNextEdge(b.getId(), dest);
 			}
-			Iterator<String> f_iter = game.getFruits().iterator();
-			mgg.fruits.clear();
-			if(f_iter.hasNext())
+		}
+		Iterator<String> f_iter = game.getFruits().iterator();
+		mgg.fruits.clear();
+		if(f_iter.hasNext())
+		{
+			while(f_iter.hasNext())
 			{
-				while(f_iter.hasNext())
-				{
-					String json = f_iter.next();
-					fruit n = new fruit(mgg.graph);
-					n.initFromJson(json);
-					mgg.fruits.put(n.getPos(),n);
-				}
-
+				String json = f_iter.next();
+				fruit n = new fruit(mgg.graph);
+				n.initFromJson(json);
+				mgg.fruits.put(n.getPos(),n);
 			}
-			List<String> botsStr = game.getRobots();
-			for (String string : botsStr) {
-				bot ber = new bot();
-				ber.setGrap(mgg.graph);
-				ber.botFromJSON(string);
-
-				mgg.bots.put(ber.getId(), ber);
-			}
-			mgg.paint();
-		//}
+		}
+		List<String> botsStr = game.getRobots();
+		for (String string : botsStr) {
+			bot ber = new bot();
+			ber.setGrap(mgg.graph);
+			ber.botFromJSON(string);
+			mgg.bots.put(ber.getId(), ber);
+		}
+		mgg.paint();
 	}
+	/**
+	 * This methos returns the integer which represents the Node that the Bot must 
+	 * advanced to.
+	 * @param game
+	 * @return
+	 */
 	private int nextNodeManual(game_service game)
 	{
 		if(mgg.isBotChooser)
@@ -181,5 +197,5 @@ public class manualGame {
 			return -1;
 		}
 	}
-	
+
 }

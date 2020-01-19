@@ -1,26 +1,16 @@
 package gameClient;
 
 import java.awt.Color;
-import java.io.File;
 import java.time.LocalTime;
-import java.time.temporal.TemporalAmount;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 import java.util.Set;
-
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileSystemView;
-
-import org.json.JSONException;
 import org.json.JSONObject;
-
 import MydataStructure.bot;
 import MydataStructure.edge_data;
 import MydataStructure.fruit;
@@ -55,17 +45,21 @@ public class MyGameGUI  {
 	int botidtoMove;
 	KML_Logger k;
 
-
+/**
+ * constructor - receives a graph
+ * @param g
+ */
 	public MyGameGUI(graph g)  {
-		// TODO Auto-generated constructor stub
 		this.graph = g;
 		this.fruits = new Hashtable<Point3D, fruitInterface>();
 		this.bots = new Hashtable<Integer, robotInterface>();
 		initGUI();
 	}
+	/**
+	 * default constructor
+	 */
 	public MyGameGUI() {
 
-		// TODO Auto-generated constructor stub
 		graph = new myDGraph();
 		this.fruits = new Hashtable<Point3D, fruitInterface>();
 		this.bots = new Hashtable<Integer, robotInterface>();
@@ -100,13 +94,11 @@ public class MyGameGUI  {
 							Thread.sleep(timeToSleep);
 							String Starttime  = java.time.LocalDate.now()+"T"+java.time.LocalTime.now();
 							LocalTime test = LocalTime.now();
-							//test = test.plusSeconds(timeToSleep/1000);
 							test= test.plusNanos(timeToSleep*1000000);
 							String endTime = java.time.LocalDate.now()+"T"+test;
 							k.setFruits(Starttime,endTime);
 							k.setBots(Starttime,endTime);
 						}
-
 						catch (Exception e) {
 							e.printStackTrace();
 						}
@@ -117,10 +109,10 @@ public class MyGameGUI  {
 		});
 		t.start();
 	}
-
 	/**
 	 * Initiates the GUI and preparing it work with a given graph
-	 * Setting canvas size, enabling double buffering, building a graph, building the KML file base and setting the scale.
+	 * Setting canvas size, enabling double buffering, building a graph,
+	 *  building the KML file base and setting the scale.
 	 */
 	private void initGUI()
 	{
@@ -161,9 +153,8 @@ public class MyGameGUI  {
 			paint();
 		}
 	}
-
 	/**
-	 * 
+	 * This method visually paints the graph, Bots & Fruits 
 	 */
 	public void paint()
 	{
@@ -226,7 +217,6 @@ public class MyGameGUI  {
 					{
 						StdDraw_gameGUI.picture(point3d.x(), point3d.y(),"images/strawberry.png");
 					}
-
 				}
 			}
 			if(!bots.isEmpty())
@@ -238,10 +228,14 @@ public class MyGameGUI  {
 					StdDraw_gameGUI.picture(p.x(), p.y(),"images/robot3.png");
 				}
 			}
-
 		}
 		StdDraw_gameGUI.show();
 	}
+	/**
+	 * This method receives a string  and initiates an object from the type
+	 * of manuelGame and activates it
+	 * @param fromS
+	 */
 	public void Play_manual(String fromS)
 	{
 		if(game != null && game.isRunning())
@@ -256,6 +250,11 @@ public class MyGameGUI  {
 			mG.play(fromS);
 		}
 	}
+	/**
+	 * This method initiates the game by clearing the game and 
+	 * then adding all of the game elements again (fruis bots & graph)
+	 * @param gameNum
+	 */
 	public void gameInit(int gameNum)
 	{
 		StdDraw_gameGUI.clear();
@@ -362,7 +361,11 @@ public class MyGameGUI  {
 			e.printStackTrace();
 		}
 	}
-
+/**
+ * This method receives a string initiates an object from the 
+ * type of manuelGame and activates it
+ * @param S
+ */
 	public void Play_Automaticly(String S)
 	{
 		if(game!=null && game.isRunning())
