@@ -1,7 +1,11 @@
 # The Maze Of Waze
 This is a homework project Exercise #3 in the Object-oriented programming course.
-In this assignment we used the infrastructure of the previous project (Ex2). The main goal of this assignment is to develop a logic structure and algorithms for a game where a group of ‘robots’ needs to make effective movement and thus gain as many points as possible by collecting fruit. By a given graph, we would like to place the robots strategically and run the program visually. This game should run manually or automatically depending on the user’s choice.
-In this project we use a given server which helps us to understand a bit of the logic behind this project and through the server we get all the information that we need for creating this game.
+
+In this assignment we used the infrastructure of the previous project (Ex2).
+The main goal of this assignment is to develop a logic structure and algorithms for a game where a group of ‘robots’ needs to make effective movement and thus gain as many points as possible by collecting fruit.
+By a given graph, we would like to place the robots strategically and run the program visually. This game should run manually or automatically depending on the user’s choice.
+
+In this project we use a given server which helps us to understand the logic behind this project and through the server we get all the data that we need for creating this game.
 In addition to the previous packages & classes we’ve added a package named 
 
 ### gameClient which includes these classes:
