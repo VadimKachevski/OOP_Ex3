@@ -11,6 +11,8 @@ import java.util.Set;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.json.JSONObject;
+
+
 import MydataStructure.bot;
 import MydataStructure.edge_data;
 import MydataStructure.fruit;
@@ -321,6 +323,28 @@ public class MyGameGUI  {
 				fruitInterface CurrFruit = fruits.get(point3d);
 				fruitSmart.add(CurrFruit);
 			}
+			ArrayList<fruitInterface> testSmarter = new ArrayList<fruitInterface>();
+			for (int i = 0; i < fruitSmart.size(); i++) {
+				for (int j = i+1; j < fruitSmart.size(); j++) {
+					int iSrc = fruitSmart.get(i).getEdge().getSrc();
+					int iDest = fruitSmart.get(i).getEdge().getDest();
+					int jSrc = fruitSmart.get(j).getEdge().getSrc();
+					int jDest = fruitSmart.get(j).getEdge().getDest();
+					if(iSrc == jSrc || iSrc == jDest || iDest == jSrc || iDest == jDest)
+					{
+						testSmarter.add(fruitSmart.get(i));
+					}
+				}
+			}
+			//int runner=0;
+			while(!testSmarter.isEmpty() && counter < amountRob)
+			{
+				//System.out.println("FOUND ONE");
+				game.addRobot(testSmarter.get(0).getEdge().getSrc());
+				System.out.println(testSmarter.get(0).getEdge().getSrc());
+				testSmarter.remove(0);
+				counter++;
+			}
 			while(!fruitSmart.isEmpty() && counter < amountRob) // TO fix later better AI with Weight
 			{
 				int Max = Integer.MIN_VALUE;
@@ -343,6 +367,7 @@ public class MyGameGUI  {
 			}
 			while(counter < amountRob)
 			{
+				//System.out.println("adding random shit");
 				int pos = (int)(Math.random()*graph.nodeSize());
 				game.addRobot(pos);
 				counter++;

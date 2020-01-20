@@ -15,6 +15,7 @@ import MydataStructure.fruit;
 import MydataStructure.fruitInterface;
 import MydataStructure.node_data;
 import MydataStructure.robotInterface;
+import Server.Game_Server;
 import Server.game_service;
 import algorithms.Graph_Algo;
 import utils.Point3D;
@@ -42,6 +43,7 @@ public class autoGame {
 			int number = Integer.parseInt(gameNumStr);
 			if(number>=0 && number<=23)
 			{
+				Game_Server.login(321711061);
 				mgg.gameInit(number);
 				startGame(number);				
 			}
@@ -69,7 +71,8 @@ public class autoGame {
 		mgg.ThreadKML();
 		Long timeTestThread = mgg.game.timeToEnd();
 		while(mgg.game.isRunning()) {
-			if(timeTestThread - mgg.game.timeToEnd() > 70)
+			
+			if(timeTestThread - mgg.game.timeToEnd() > 53)
 			{
 				mgg.game.move();
 				timeTestThread = mgg.game.timeToEnd();
@@ -88,6 +91,7 @@ public class autoGame {
 		}
 		String results = mgg.game.toString();
 		mgg.k.saveToFile(""+numberOfGame,results);
+		mgg.game.sendKML("data/"+numberOfGame+".kml");
 		System.out.println("Game Over: "+results);
 
 	}

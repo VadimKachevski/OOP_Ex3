@@ -99,6 +99,14 @@ class g_GUITest {
 	
 	static void testNewGUI()
 	{
+//		int[] arrT = {5,16,23};
+//		for (int i = 0; i < arrT.length; i++) {
+//			
 			MyGameGUI ggnew = new MyGameGUI();
+//			ggnew.Play_Automaticly(arrT[i]+"");
+//			System.err.println(i);
+//			
+//		}
+			
 	}
 }
