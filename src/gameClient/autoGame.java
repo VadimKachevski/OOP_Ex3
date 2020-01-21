@@ -1,5 +1,8 @@
 package gameClient;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -11,6 +14,7 @@ import javax.swing.JOptionPane;
 import org.json.JSONObject;
 
 import MydataStructure.bot;
+import MydataStructure.edge_data;
 import MydataStructure.fruit;
 import MydataStructure.fruitInterface;
 import MydataStructure.node_data;
@@ -43,7 +47,7 @@ public class autoGame {
 			int number = Integer.parseInt(gameNumStr);
 			if(number>=0 && number<=23)
 			{
-				Game_Server.login(321711061);
+//				Game_Server.login(321711061);
 				mgg.gameInit(number);
 				startGame(number);				
 			}
@@ -71,18 +75,18 @@ public class autoGame {
 		mgg.ThreadKML();
 		Long timeTestThread = mgg.game.timeToEnd();
 		while(mgg.game.isRunning()) {
-			
-			if(timeTestThread - mgg.game.timeToEnd() > 53)
+
+			if(timeTestThread - mgg.game.timeToEnd() > 105)
 			{
 				mgg.game.move();
 				timeTestThread = mgg.game.timeToEnd();
 			}
 			try {
-			String results = mgg.game.toString();
-			JSONObject obj = new JSONObject(results);
-			JSONObject CurrRes = (JSONObject) obj.get("GameServer");
-			mgg.val = CurrRes.getInt("grade");
-			mgg.moveM = CurrRes.getInt("moves");
+				String results = mgg.game.toString();
+				JSONObject obj = new JSONObject(results);
+				JSONObject CurrRes = (JSONObject) obj.get("GameServer");
+				mgg.val = CurrRes.getInt("grade");
+				mgg.moveM = CurrRes.getInt("moves");
 			}catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -90,11 +94,34 @@ public class autoGame {
 			move(mgg.game);
 		}
 		String results = mgg.game.toString();
-		mgg.k.saveToFile(""+numberOfGame,results);
-		mgg.game.sendKML("data/"+numberOfGame+".kml");
-		System.out.println("Game Over: "+results);
+		
 
+		mgg.k.saveToFile(""+numberOfGame,results);
+//		String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
+//		boolean testConn = mgg.game.sendKML(KMLstr);
+		System.out.println("Game Over: "+results);
 	}
+	
+	
+	private String getKMLsting(String path)
+	{
+		String st=""; 
+		try {
+			File file = new File(path);
+			BufferedReader br = new BufferedReader(new FileReader(file)); 
+
+			String str;
+			while ((str = br.readLine()) != null) 
+			{
+				st+=str+"\n"; 
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return st;
+	}
+	
 	/**
 	 * by receiving the server (which holds the data and updates it as
 	 * the game is running), this algorithm calculates the next step of
@@ -159,13 +186,38 @@ public class autoGame {
 			{
 				if(b.getCurrNode().getLocation().distance2D(b.getPos())<= 0.000001)
 				{
-					List<node_data> path = b.getPath();
-					game.chooseNextEdge(b.getId(), path.get(0).getKey());
-					b.setCurrNode(path.get(0));
-					path.remove(0);
-					if(path.size() == 0)
+
+					if(b.getPath().size() >=2)
 					{
-						b.setPath(null);
+						int pathSize = b.getPath().size();
+						edge_data ed = mgg.graph.getEdge(b.getPath().get(pathSize-2).getKey(), b.getPath().get(pathSize-1).getKey());
+						Set<Point3D> fruitCheker = mgg.fruits.keySet();
+						boolean found = false;
+						for (Point3D point3d : fruitSet) {
+							fruitInterface fr = mgg.fruits.get(point3d);
+							if(fr!=null)
+							{
+								if(fr.getEdge().getSrc() == ed.getSrc() && fr.getEdge().getDest() == ed.getDest())
+								{
+									found = true;
+								}
+							}
+						}
+						if(found==false)
+						{
+							b.setPath(null);
+						}
+					}
+					if(b.getPath()!=null)
+					{
+						List<node_data> path = b.getPath();
+						game.chooseNextEdge(b.getId(), path.get(0).getKey());
+						b.setCurrNode(path.get(0));
+						path.remove(0);
+						if(path.size() == 0)
+						{
+							b.setPath(null);
+						}
 					}
 				}
 			}

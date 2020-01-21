@@ -123,7 +123,7 @@ public class KML_Logger {
 					System.out.println("grade:"+grade + " prev grade :"+prevGrade);
 					k.marshal(tmpDir);
 				}
-				else
+				if(grade==prevGrade)
 				{
 					if(moves<prevMoves)
 					{
