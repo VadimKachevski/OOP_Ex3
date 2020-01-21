@@ -7,15 +7,15 @@ By a given graph, we would like to place the robots strategically and run the pr
 
 In this project we use a given server which helps us to understand the logic behind this project and through the server we get all the data that we need for creating this game.
 
-Another goal of this project is to reach at the result in the following table;
+**Another** goal of this project is to reach the results in this table;
 
 ![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/goal%20table.jpg)
 
-The main emphasis of this table is to reach at least the given result by less or equal moves.
-Through an access to a given database server, we have added to our graphical class **MyGameGui** that we developed, our results in relation to other project participants.
+The main emphasis of this table is to **reach at least the given result by less or equal moves.**
+Through an access to a given database server, we have added to our graphical class **MyGameGui**, our results in relation to other project participants.
 
-More information that can be obtained through our **MyGameGui** class is that we have created information about how many games we have played so far, our current stage and for each stage our best result.
-For each of the steps described in the table, we show our relative position.
+Addition information that can be obtained through our **MyGameGui** class is how many games we have played so far, our current stage and for each stage our best result.
+For each of these steps described in the table, we show our relative position.
 
 In addition to the previous packages & classes we’ve added a package named 
 
