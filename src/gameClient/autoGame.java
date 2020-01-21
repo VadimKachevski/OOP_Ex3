@@ -47,7 +47,7 @@ public class autoGame {
 			int number = Integer.parseInt(gameNumStr);
 			if(number>=0 && number<=23)
 			{
-//				Game_Server.login(321711061);
+				Game_Server.login(321711061);
 				mgg.gameInit(number);
 				startGame(number);				
 			}
@@ -97,8 +97,8 @@ public class autoGame {
 		
 
 		mgg.k.saveToFile(""+numberOfGame,results);
-//		String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
-//		boolean testConn = mgg.game.sendKML(KMLstr);
+		String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
+		boolean testConn = mgg.game.sendKML(KMLstr);
 		System.out.println("Game Over: "+results);
 	}
 	

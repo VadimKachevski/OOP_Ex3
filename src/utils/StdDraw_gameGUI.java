@@ -76,6 +76,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.KeyStroke;
 
 import MydataStructure.graph;
@@ -627,7 +629,7 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 
 	// the frame for drawing to the screen
 	private static JFrame frame;
-
+	private static JTable table;
 	// mouse state
 	private static boolean isMousePressed = false;
 	private static double mouseX = 0;
@@ -708,8 +710,8 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 
 		draw.addMouseListener(std);
 		draw.addMouseMotionListener(std);
-
 		frame.setContentPane(draw);
+		
 		frame.addKeyListener(std);    // JLabel cannot get keyboard focus
 		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
@@ -724,12 +726,17 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		JMenuBar menuBar = new JMenuBar();
 		JMenu menu = new JMenu("Play");
 		menuBar.add(menu);
+		JMenu DBmenu = new JMenu("Scores");
+		menuBar.add(DBmenu);
 		JMenuItem item1 = new JMenuItem("Play manual");
 		JMenuItem item2 = new JMenuItem("Play Automaticly");
+		JMenuItem item3 = new JMenuItem("Display scores from DB");
 		item1.addActionListener(std);
 		item2.addActionListener(std);
+		item3.addActionListener(std);
 		menu.add(item1);
 		menu.add(item2);
+		DBmenu.add(item3);
 		return menuBar;
 	}
 	public static void CreateMenu()
@@ -1687,6 +1694,10 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			jinput.dispose();
 			threadauto(fromS);
 		}	
+		if(act.equals("Display scores from DB"))
+		{
+			threadDB();
+		}
 	}
 	static Thread t;
 	public static void threadman(String s)
@@ -1713,8 +1724,41 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		});
 		t2.start();
 	}
-
-
+	static Thread dbT;
+	public static void threadDB()
+	{
+		dbT = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				g.Init_Scores();
+				
+			}
+		});
+		dbT.start();
+	}
+	
+	
+	public static void createTable()
+	{
+		String[][] data = { 
+	            { "Kundan Kumar Jha", "4031", "CSE" }, 
+	            { "Anand Jha", "6014", "IT" } 
+	        }; 
+	  
+	        // Column Names 
+	        String[] columnNames = { "Name", "Roll Number", "Department" }; 
+		table = new JTable(data,columnNames);
+		table.setBounds(30, 40, 200, 300);
+		table.setFillsViewportHeight(true);
+//		setPenColor(Color.BLACK);
+//		filledCircle(30, 40, 5);
+		JScrollPane sp = new JScrollPane(table); 
+        frame.add(sp); 
+        //frame.setVisible(true);
+	}
+	
+	
 	/***************************************************************************
 	 *  Mouse interactions.
 	 ***************************************************************************/

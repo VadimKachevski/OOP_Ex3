@@ -1,6 +1,10 @@
 package gameClient;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Container;
+import java.awt.Font;
+import java.sql.ResultSet;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,6 +14,9 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
 import org.json.JSONObject;
 
 
@@ -28,7 +35,9 @@ import utils.StdDraw_gameGUI;
 
 public class MyGameGUI  {
 
+
 	graph graph;
+	dbConnector dbCon;
 	Hashtable<Point3D,fruitInterface> fruits;
 	Hashtable<Integer,robotInterface> bots;
 	double minx=Integer.MAX_VALUE;
@@ -47,10 +56,10 @@ public class MyGameGUI  {
 	int botidtoMove;
 	KML_Logger k;
 
-/**
- * constructor - receives a graph
- * @param g
- */
+	/**
+	 * constructor - receives a graph
+	 * @param g
+	 */
 	public MyGameGUI(graph g)  {
 		this.graph = g;
 		this.fruits = new Hashtable<Point3D, fruitInterface>();
@@ -62,9 +71,10 @@ public class MyGameGUI  {
 	 */
 	public MyGameGUI() {
 
-		graph = new myDGraph();
-		this.fruits = new Hashtable<Point3D, fruitInterface>();
-		this.bots = new Hashtable<Integer, robotInterface>();
+		//graph = new myDGraph();
+		//this.fruits = new Hashtable<Point3D, fruitInterface>();
+		//		this.bots = new Hashtable<Integer, robotInterface>();
+		//defaultCont = StdDraw_gameGUI.getJFrame().getContentPane();
 		initGUI();
 	}
 
@@ -154,6 +164,18 @@ public class MyGameGUI  {
 			StdDraw_gameGUI.show();
 			paint();
 		}
+		else
+		{
+			minx = 0;
+			miny = 0;
+			maxx = 600;
+			maxy = 800;
+			StdDraw_gameGUI.setXscale(minx, maxx);
+			StdDraw_gameGUI.setYscale(miny,maxy);
+			StdDraw_gameGUI.setG_GUI(this);
+			StdDraw_gameGUI.show();
+		}
+
 	}
 	/**
 	 * This method visually paints the graph, Bots & Fruits 
@@ -386,11 +408,11 @@ public class MyGameGUI  {
 			e.printStackTrace();
 		}
 	}
-/**
- * This method receives a string initiates an object from the 
- * type of manuelGame and activates it
- * @param S
- */
+	/**
+	 * This method receives a string initiates an object from the 
+	 * type of manuelGame and activates it
+	 * @param S
+	 */
 	public void Play_Automaticly(String S)
 	{
 		if(game!=null && game.isRunning())
@@ -405,4 +427,80 @@ public class MyGameGUI  {
 			aG.play(S);
 		}
 	}
+	public void Init_Scores() {
+		int id = 321711061;
+		try {
+		JFrame jinput = new JFrame();
+		String fromS = JOptionPane.showInputDialog(jinput,"Enter ID or Leave blank for default");
+		jinput.dispose();
+		
+		id = Integer.parseInt(fromS);
+		}
+		catch (Exception e) {
+			
+		}
+		
+		// TODO Auto-generated method stub
+		StdDraw_gameGUI.setFont(new Font("TimeRoman", Font.BOLD,15 ));
+		int[] levelInfo = dbConnector.getNumbergames(id);
+		StdDraw_gameGUI.text(maxx/2, maxy, "ID:"+id);
+		StdDraw_gameGUI.text(maxx/2, maxy-35,"Current Game : "+ levelInfo[1] +" Total amount of games: " + levelInfo[0]);
+		
+		StdDraw_gameGUI.text(minx, maxy-85, "Games");
+		StdDraw_gameGUI.text(minx+125, maxy-85, "Best result");
+		StdDraw_gameGUI.text(minx+225, maxy-85, "Score goal");
+		StdDraw_gameGUI.text(minx+300, maxy-85, "Moves");
+		StdDraw_gameGUI.text(minx+375, maxy-85, "Max moves");
+		StdDraw_gameGUI.text(minx+450, maxy-85, "Rank");
+		int scale = 135;
+		double[][] bestRes = dbConnector.bestResult(id);
+		int rank[] = dbConnector.findRank(bestRes);
+		for (int i = 0; i <= 11; i++) {
+			if (i != 10) {
+				int game = whichStage(i);
+				StdDraw_gameGUI.text(minx, maxy-scale, "Game " + game + " - Case " + i);
+				StdDraw_gameGUI.text(minx+125, maxy-scale, "Best resualt: "+ bestRes[i][0]);
+				StdDraw_gameGUI.text(minx+225, maxy-scale, bestRes[i][1]+"");
+				StdDraw_gameGUI.text(minx+300, maxy-scale, bestRes[i][2]+"");
+				StdDraw_gameGUI.text(minx+375, maxy-scale, bestRes[i][3]+"");
+				StdDraw_gameGUI.text(minx+450, maxy-scale, rank[i]+1+"");
+				scale += 50;
+			}		
+		}
+
+
+		StdDraw_gameGUI.show();
+	}
+
+	public int whichStage(int index) {
+		switch (index) {
+		case 0 : 
+			return 0;
+		case 1 : 
+			return 1;
+		case 2 : 
+			return 3;
+		case 3 : 
+			return 5;
+		case 4 : 
+			return 9;
+		case 5 : 
+			return 11;
+		case 6 : 
+			return 13;
+		case 7 : 
+			return 16;
+		case 8 : 
+			return 19;
+		case 9 : 
+			return 20;
+		case 11 : 
+			return 23;
+		default :
+			return -1;
+		}
+	}
+
+
+
 }
