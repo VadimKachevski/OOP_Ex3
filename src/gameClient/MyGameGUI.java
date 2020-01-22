@@ -459,7 +459,7 @@ public class MyGameGUI  {
 			if (i != 10) {
 				int game = whichStage(i);
 				StdDraw_gameGUI.text(minx, maxy-scale, "Game " + game + " - Case " + i);
-				StdDraw_gameGUI.text(minx+125, maxy-scale, "Best resualt: "+ bestRes[i][0]);
+				StdDraw_gameGUI.text(minx+125, maxy-scale, " "+ bestRes[i][0]);
 				StdDraw_gameGUI.text(minx+225, maxy-scale, bestRes[i][1]+"");
 				StdDraw_gameGUI.text(minx+300, maxy-scale, bestRes[i][2]+"");
 				StdDraw_gameGUI.text(minx+375, maxy-scale, bestRes[i][3]+"");
