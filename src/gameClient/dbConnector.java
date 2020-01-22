@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Hashtable;
 
 public class dbConnector {
 	public static final String jdbcUrl="jdbc:mysql://db-mysql-ams3-67328-do-user-4468260-0.db.ondigitalocean.com:25060/oop?useUnicode=yes&characterEncoding=UTF-8&useSSL=false";
@@ -167,6 +168,7 @@ public class dbConnector {
 
 	public static int[] findRank(double[][] helpArr)
 	{
+		Hashtable<Integer, Hashtable<Integer, Integer>> hashIDs = new Hashtable<Integer, Hashtable<Integer,Integer>>();
 		ResultSet rs=null;
 		int[] ans =new int[12];
 		try {
@@ -207,8 +209,20 @@ public class dbConnector {
 			try {
 				while(rs.next())
 				{
+					
 					int LevelID = rs.getInt("levelID");
+					if(hashIDs.get(LevelID) == null)
+					{
+						hashIDs.put(LevelID, new Hashtable<Integer, Integer>());
+					}
+					Hashtable<Integer, Integer> tempHashIdByLevelID = hashIDs.get(LevelID);
+					int userID = rs.getInt("UserID");
+					if(tempHashIdByLevelID.get(userID) == null)
+					{
 					ans[whichStageReverse(LevelID)]++;
+					tempHashIdByLevelID.put(userID, userID);
+					}
+					
 				}
 			}
 			catch (Exception e) {
