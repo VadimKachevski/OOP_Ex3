@@ -729,13 +729,16 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		JMenu DBmenu = new JMenu("Scores");
 		menuBar.add(DBmenu);
 		JMenuItem item1 = new JMenuItem("Play manual");
-		JMenuItem item2 = new JMenuItem("Play Automaticly");
+		JMenuItem item2 = new JMenuItem("Play Automaticly Online");
 		JMenuItem item3 = new JMenuItem("Display scores from DB");
+		JMenuItem item4 = new JMenuItem("Play Automaticly Ofline");
 		item1.addActionListener(std);
 		item2.addActionListener(std);
 		item3.addActionListener(std);
+		item4.addActionListener(std);
 		menu.add(item1);
 		menu.add(item2);
+		menu.add(item4);
 		DBmenu.add(item3);
 		return menuBar;
 	}
@@ -1687,12 +1690,19 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 			jinput.dispose();
 			threadman(fromS);
 		}
-		if(act.equals("Play Automaticly"))
+		if(act.equals("Play Automaticly Online"))
 		{
 			JFrame jinput = new JFrame();
 			String fromS = JOptionPane.showInputDialog(jinput,"Which game to run? 0-23");
 			jinput.dispose();
-			threadauto(fromS);
+			threadauto(fromS,true);
+		}	
+		if(act.equals("Play Automaticly Offline"))
+		{
+			JFrame jinput = new JFrame();
+			String fromS = JOptionPane.showInputDialog(jinput,"Which game to run? 0-23");
+			jinput.dispose();
+			threadauto(fromS,false);
 		}	
 		if(act.equals("Display scores from DB"))
 		{
@@ -1712,14 +1722,14 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		t.start();
 	}
 	static Thread t2;
-	public static void threadauto(String s)
+	public static void threadauto(String s, boolean state)
 	{
 		
 		t2 = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
-				g.Play_Automaticly(s);
+				g.Play_Automaticly(s,state);
 			}
 		});
 		t2.start();

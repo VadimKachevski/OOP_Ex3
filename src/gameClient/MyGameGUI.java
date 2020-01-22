@@ -403,7 +403,7 @@ public class MyGameGUI  {
 	 * type of manuelGame and activates it
 	 * @param S
 	 */
-	public void Play_Automaticly(String S)
+	public void Play_Automaticly(String S, boolean state)
 	{
 		if(game!=null && game.isRunning())
 		{
@@ -414,7 +414,7 @@ public class MyGameGUI  {
 		else
 		{
 			autoGame aG = new autoGame(this);
-			aG.play(S);
+			aG.play(S, state);
 		}
 	} 
 	/**

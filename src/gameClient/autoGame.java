@@ -40,16 +40,19 @@ public class autoGame {
 	 * valid input it calls the startGame method for running the auto phase.
 	 * @param gameNumStr the level which was chosen
 	 */
-	public void play(String gameNumStr)
+	public void play(String gameNumStr, boolean state)
 	{
 		try
 		{  
 			int number = Integer.parseInt(gameNumStr);
 			if(number>=0 && number<=23)
 			{
-				Game_Server.login(321711061);
+				if (state) {
+					Game_Server.login(321711061);
+				}
 				mgg.gameInit(number);
-				startGame(number);				
+				startGame(number, state);	
+
 			}
 			else
 			{
@@ -69,7 +72,7 @@ public class autoGame {
 	 * about the amount of moves and grades collected so far.
 	 * @param numberOfGame
 	 */
-	private void startGame(int numberOfGame) {
+	private void startGame(int numberOfGame, boolean state) {
 		mgg.game.startGame();
 		mgg.k.setGame(mgg.game);
 		mgg.ThreadKML();
@@ -94,11 +97,13 @@ public class autoGame {
 			move(mgg.game);
 		}
 		String results = mgg.game.toString();
-		
+
 
 		mgg.k.saveToFile(""+numberOfGame,results);
-		String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
-		boolean testConn = mgg.game.sendKML(KMLstr);
+		if (state) {
+			String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
+		    mgg.game.sendKML(KMLstr);
+		}
 		System.out.println("Game Over: "+results);
 	}	
 	private String getKMLsting(String path)
@@ -119,7 +124,7 @@ public class autoGame {
 		}
 		return st;
 	}
-	
+
 	/**
 	 * by receiving the server (which holds the data and updates it as
 	 * the game is running), this algorithm calculates the next step of
