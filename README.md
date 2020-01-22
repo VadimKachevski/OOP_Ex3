@@ -39,7 +39,7 @@ Addition information about these classes will be find in the WIKI section.
 
 first the user must choose if to play the game manually or automatically
 
-![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/play.jpg)
+![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/online%20offline.jpg)
 
 secondly, you must chose a level to play (0 – 23 levles) we chose level 21 on automatic mode for this example
 ![alt text](https://github.com/VadimKachevski/OOP_Ex3/blob/master/images/choose%20level.png)
