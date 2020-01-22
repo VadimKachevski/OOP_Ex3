@@ -35,7 +35,6 @@ import utils.StdDraw_gameGUI;
 
 public class MyGameGUI  {
 
-
 	graph graph;
 	dbConnector dbCon;
 	Hashtable<Point3D,fruitInterface> fruits;
@@ -70,14 +69,8 @@ public class MyGameGUI  {
 	 * default constructor
 	 */
 	public MyGameGUI() {
-
-		//graph = new myDGraph();
-		//this.fruits = new Hashtable<Point3D, fruitInterface>();
-		//		this.bots = new Hashtable<Integer, robotInterface>();
-		//defaultCont = StdDraw_gameGUI.getJFrame().getContentPane();
 		initGUI();
 	}
-
 	/**
 	 * Sets the X and Y position of the mouse on click
 	 * @param xpos
@@ -358,10 +351,8 @@ public class MyGameGUI  {
 					}
 				}
 			}
-			//int runner=0;
 			while(!testSmarter.isEmpty() && counter < amountRob)
 			{
-				//System.out.println("FOUND ONE");
 				game.addRobot(testSmarter.get(0).getEdge().getSrc());
 				System.out.println(testSmarter.get(0).getEdge().getSrc());
 				testSmarter.remove(0);
@@ -389,7 +380,6 @@ public class MyGameGUI  {
 			}
 			while(counter < amountRob)
 			{
-				//System.out.println("adding random shit");
 				int pos = (int)(Math.random()*graph.nodeSize());
 				game.addRobot(pos);
 				counter++;
@@ -426,26 +416,29 @@ public class MyGameGUI  {
 			autoGame aG = new autoGame(this);
 			aG.play(S);
 		}
-	}
+	} 
+	/**
+	 * this method makes a table of all the data for a selected id. 
+	 *The data which is shown is: game cases, levels, best result for each case,
+	 *amount of moves, moves allowed, score to reach
+	 */
 	public void Init_Scores() {
 		int id = 321711061;
 		try {
-		JFrame jinput = new JFrame();
-		String fromS = JOptionPane.showInputDialog(jinput,"Enter ID or Leave blank for default");
-		jinput.dispose();
-		
-		id = Integer.parseInt(fromS);
+			JFrame jinput = new JFrame();
+			String fromS = JOptionPane.showInputDialog(jinput,"Enter ID or Leave blank for default");
+			jinput.dispose();
+
+			id = Integer.parseInt(fromS);
 		}
 		catch (Exception e) {
-			
 		}
-		
-		// TODO Auto-generated method stub
+
 		StdDraw_gameGUI.setFont(new Font("TimeRoman", Font.BOLD,15 ));
 		int[] levelInfo = dbConnector.getNumbergames(id);
 		StdDraw_gameGUI.text(maxx/2, maxy, "ID:"+id);
 		StdDraw_gameGUI.text(maxx/2, maxy-35,"Current Game : "+ levelInfo[1] +" Total amount of games: " + levelInfo[0]);
-		
+
 		StdDraw_gameGUI.text(minx, maxy-85, "Games");
 		StdDraw_gameGUI.text(minx+125, maxy-85, "Best result");
 		StdDraw_gameGUI.text(minx+225, maxy-85, "Score goal");
@@ -467,11 +460,14 @@ public class MyGameGUI  {
 				scale += 50;
 			}		
 		}
-
-
 		StdDraw_gameGUI.show();
 	}
-
+	/**
+	 * By a given a case number this method helps us translate the case number to its level 
+	 * number which represents the given case number and returns it.
+	 * @param index
+	 * @return
+	 */
 	public int whichStage(int index) {
 		switch (index) {
 		case 0 : 
@@ -500,7 +496,4 @@ public class MyGameGUI  {
 			return -1;
 		}
 	}
-
-
-
 }

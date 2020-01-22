@@ -44,7 +44,6 @@ public class manualGame {
 			{
 				mgg.gameInit(number);
 				startGame(number);				
-
 			}
 			else
 			{
@@ -117,7 +116,6 @@ public class manualGame {
 			robotInterface b = mgg.bots.get(mgg.botidtoMove);
 			if(b!=null)
 			{
-
 				System.out.println(mgg.botidtoMove);
 				System.out.println(b.getPos().toString());
 				game.chooseNextEdge(b.getId(), dest);

@@ -100,9 +100,7 @@ public class autoGame {
 		String KMLstr = getKMLsting("data/"+numberOfGame+".kml");
 		boolean testConn = mgg.game.sendKML(KMLstr);
 		System.out.println("Game Over: "+results);
-	}
-	
-	
+	}	
 	private String getKMLsting(String path)
 	{
 		String st=""; 

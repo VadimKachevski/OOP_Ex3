@@ -60,14 +60,12 @@ public class KML_Logger {
 		Folder folder = doc.createAndAddFolder();
 		folder.withName("Folder").withOpen(true);
 
-
 		Icon icon = new Icon().withHref("http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png");
 		Style placeMarkStyle = doc.createAndAddStyle();
 		placeMarkStyle.withId("placemarkid").createAndSetIconStyle().withIcon(icon).withScale(1.2).withColor("ffff0000");
 
 		Collection<node_data> nd = g.getV();
 		for (node_data node_data : nd) {
-			//createPlacemarkWithChart(doc, folder, node_data.getLocation().x(), node_data.getLocation().y(), node_data.getKey()+"", 20);
 			Placemark p = doc.createAndAddPlacemark();
 			p.withName(node_data.getKey()+"");
 			p.withStyleUrl("#placemarkid");
@@ -86,7 +84,6 @@ public class KML_Logger {
 				p2.createAndSetLineString().withTessellate(true).addToCoordinates(loc.x(),loc.y()).addToCoordinates(locNext.x(),locNext.y());
 			}
 		}
-		//		saveToFile("test1");
 	}
 	/**
 	 * by a given name and result this function saves the file
@@ -185,7 +182,6 @@ public class KML_Logger {
 				fr.createAndSetPoint().addToCoordinates(x, y);
 				fr.createAndSetTimeSpan().withBegin(time).withEnd(end);
 			}
-
 			catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -247,7 +243,6 @@ public class KML_Logger {
 						ans.put(data.getName(), Integer.parseInt(data.getValue()));
 					}
 				}
-
 			}
 		}
 		return ans;

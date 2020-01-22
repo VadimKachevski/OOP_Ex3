@@ -1,10 +1,11 @@
 package gameClient;
 
 public class GameClient {
-
+/**
+ * this method runs our game - its our main
+ * @param args
+ */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		MyGameGUI mgg = new MyGameGUI();
 	}
-
 }

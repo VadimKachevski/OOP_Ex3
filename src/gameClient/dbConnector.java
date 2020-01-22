@@ -54,11 +54,8 @@ public class dbConnector {
 		return data;
 	}
 	/**
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
+	 * by a given id this method returns an array amount of games we 
+	 * have played and the maximum level reached. 
 	 * @param id
 	 * @return
 	 */
@@ -88,7 +85,6 @@ public class dbConnector {
 				}
 			}
 			catch (Exception e) {
-				// TODO: handle exception
 			}
 
 			rs.close();
@@ -157,7 +153,6 @@ public class dbConnector {
 				}
 			}
 			catch (Exception e) {
-				// TODO: handle exception
 			}
 
 			rs.close();
@@ -176,10 +171,12 @@ public class dbConnector {
 		return ans;
 	}
 /**
- * by a given a matrix with the information about the moves and scores of the user 
- * this method will return an array filled with the rank of each level in relation 
- * towards the rest of the participants in this project. Each position in the array 
- * represents the level.
+by a given a matrix with the information about the moves and scores of the user this method will return 
+an array filled with the rank of each level in relation towards the rest of the participants in this 
+project. Each position in the array represents the level.
+In this method we used a hashtable of a hsastable to help us keep the data of the users. 
+The key of the first map represents the level and the key of the second map representys the user ID
+
  * @param helpArr
  * @return
  */
@@ -208,20 +205,8 @@ public class dbConnector {
 				}
 			}
 			base+=";";
-			//			String allCustomersQuery = "SELECT * FROM Logs WHERE "
-			//					+ "(LevelID=0 AND score > "+helpArr[0][0]+" AND moves <= "+helpArr[0][3]+")"
-			//					+ " OR (LevelID=1 AND score > "+helpArr[1][0]+" AND moves <= "+helpArr[1][3]+")"
-			//					+ " OR (LevelID=3 AND score > "+helpArr[2][0]+" AND moves <= "+helpArr[2][3]+")"
-			//					+ " OR (LevelID=5 AND score > "+helpArr[3][0]+" AND moves <= "+helpArr[3][3]+")" 
-			//					+ " OR (LevelID=9 AND score > "+helpArr[4][0]+" AND moves <= "+helpArr[4][3]+")"
-			//					+ " OR (LevelID=11 AND score > "+helpArr[5][0]+" AND moves <= "+helpArr[5][3]+")"
-			//					+ " OR (LevelID=13 AND score > "+helpArr[6][0]+" AND moves <= "+helpArr[6][3]+")"
-			//					+ " OR (LevelID=16 AND score > "+helpArr[7][0]+" AND moves <= "+helpArr[7][3]+")"
-			//					+ " OR (LevelID=19 AND score > "+helpArr[8][0]+" AND moves <= "+helpArr[8][3]+")"
-			//					+ " OR (LevelID=20 AND score > "+helpArr[9][0]+" AND moves <= "+helpArr[9][3]+")"
-			//					+ " OR (LevelID=23 AND score > "+helpArr[11][0]+" AND moves <= "+helpArr[11][3]+");";
+		
 			String allCustomersQuery = base;
-			//String allCustomersQuery = "SELECT * FROM Logs";
 			rs = statement.executeQuery(allCustomersQuery);
 			try {
 				while(rs.next())
@@ -239,7 +224,6 @@ public class dbConnector {
 						ans[whichStageReverse(LevelID)]++;
 						tempHashIdByLevelID.put(userID, userID);
 					}
-
 				}
 			}
 			catch (Exception e) {
