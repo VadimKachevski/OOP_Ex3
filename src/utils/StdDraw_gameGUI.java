@@ -731,7 +731,7 @@ public final class StdDraw_gameGUI implements ActionListener, MouseListener, Mou
 		JMenuItem item1 = new JMenuItem("Play manual");
 		JMenuItem item2 = new JMenuItem("Play Automaticly Online");
 		JMenuItem item3 = new JMenuItem("Display scores from DB");
-		JMenuItem item4 = new JMenuItem("Play Automaticly Ofline");
+		JMenuItem item4 = new JMenuItem("Play Automaticly Offline");
 		item1.addActionListener(std);
 		item2.addActionListener(std);
 		item3.addActionListener(std);

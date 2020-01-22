@@ -11,48 +11,7 @@ public class dbConnector {
 	public static final String jdbcUrl="jdbc:mysql://db-mysql-ams3-67328-do-user-4468260-0.db.ondigitalocean.com:25060/oop?useUnicode=yes&characterEncoding=UTF-8&useSSL=false";
 	public static final String jdbcUser="student";
 	public static final String jdbcUserPassword="OOP2020student";
-/**
- * this class returns a matrix which represents the data of the data base
- * @return a matrix which each column represents a different valuable  
- */
-	public static Object[][] GetData() {
-		ResultSet rs=null;
-		Object[][] data = new Object[50][6];
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection connection = 
-					DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcUserPassword);
-			Statement statement = connection.createStatement();
-			String allCustomersQuery = "SELECT * FROM Logs WHERE UserID=321711061;";
-			rs = statement.executeQuery(allCustomersQuery);
-			try {
-				int counter = 0;
-				while(rs.next() && counter<50)
-				{
-					data[counter][0] = rs.getInt("levelID");
-					data[counter][1] = rs.getInt("moves");
-					data[counter][2] = rs.getDate("time");
-					data[counter][3] = rs.getDouble("score");
-					data[counter][4] = rs.getInt("UserID");
-					data[counter][5] = rs.getInt("logID");
-					counter++;
-				}
-			}
-			catch (Exception e) {
-			}
-			rs.close();
-			statement.close();		
-			connection.close();
-		}
-		catch (SQLException sqle) {
-			System.out.println("SQLException: " + sqle.getMessage());
-			System.out.println("Vendor Error: " + sqle.getErrorCode());
-		}
-		catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-		return data;
-	}
+
 	/**
 	 * by a given id this method returns an array amount of games we 
 	 * have played and the maximum level reached. 
@@ -131,11 +90,9 @@ public class dbConnector {
 					DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcUserPassword);
 			Statement statement = connection.createStatement();
 			String allCustomersQuery = "SELECT * FROM Logs WHERE UserID="+id+";";
-			//String allCustomersQuery = "SELECT * FROM Logs";
 			rs = statement.executeQuery(allCustomersQuery);
 			try {
 
-				//rs.
 				while(rs.next())
 				{
 					int LevelID = rs.getInt("levelID");

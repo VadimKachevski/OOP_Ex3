@@ -1,4 +1,4 @@
-package dataStructureTest;
+package MydataStructureTest;
 
 import algorithms.Graph_Algo;
 import utils.Point3D;

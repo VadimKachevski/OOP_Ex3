@@ -18,7 +18,6 @@ public class fruit implements fruitInterface {
 	boolean occupied=false; 
 
 	public fruit() {
-		// TODO Auto-generated constructor stub
 		this.g = null;
 		this.edge=null;
 		this.pos=null;
@@ -100,10 +99,6 @@ public class fruit implements fruitInterface {
 			try
 			{
 				JSONObject obj = new JSONObject(json);
-				//			JSONArray fruits = obj.getJSONArray("Fruit");
-				//			for (int i = 0; i < fruits.length(); i++)
-				//			{
-				//				JSONObject CurrFruit = (JSONObject)fruits.get(i);
 				JSONObject CurrFruit = (JSONObject) obj.get("Fruit");
 				String pos = CurrFruit.getString("pos");
 				String[] arr = pos.split(",");
@@ -119,7 +114,6 @@ public class fruit implements fruitInterface {
 				//			}
 			}
 			catch (Exception e) {
-				// TODO: handle exception
 				e.printStackTrace();
 			}
 		}

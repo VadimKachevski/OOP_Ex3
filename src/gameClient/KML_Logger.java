@@ -72,7 +72,7 @@ public class KML_Logger {
 			p.createAndSetPoint().addToCoordinates(node_data.getLocation().x(), node_data.getLocation().y());
 
 			Style redStyle= doc.createAndAddStyle();
-			redStyle.withId("redstyle").createAndSetLineStyle().withColor("ff0000ff").setWidth(3.0);;
+			redStyle.withId("redstyle").createAndSetLineStyle().withColor("ff0000ff").setWidth(3.0);
 			Collection<edge_data> ed = g.getE(node_data.getKey());
 			for (edge_data edgess : ed) {
 				Placemark p2 = doc.createAndAddPlacemark();
@@ -117,7 +117,7 @@ public class KML_Logger {
 
 				if(grade>prevGrade)
 				{
-					System.out.println("grade:"+grade + " prev grade :"+prevGrade);
+					System.out.println("grade: "+grade + " prev grade :"+prevGrade);
 					k.marshal(tmpDir);
 				}
 				if(grade==prevGrade)
@@ -166,8 +166,6 @@ public class KML_Logger {
 				String[] arr = pos.split(",");
 				double x = Double.parseDouble(arr[0]);
 				double y = Double.parseDouble(arr[1]);
-				double z = Double.parseDouble(arr[2]);
-				Point3D p = new Point3D(x, y, z);
 				int type = CurrFruit.getInt("type");
 
 				Placemark fr = doc.createAndAddPlacemark();
@@ -207,9 +205,6 @@ public class KML_Logger {
 				String[] arr = pos.split(",");
 				double x = Double.parseDouble(arr[0]);
 				double y = Double.parseDouble(arr[1]);
-				double z = Double.parseDouble(arr[2]);
-				Point3D posP = new Point3D(x, y, z);
-				int id = CurrBot.getInt("id");
 				Placemark bot = doc.createAndAddPlacemark();
 				bot.setStyleUrl("#Bus");
 				bot.createAndSetPoint().addToCoordinates(x, y);

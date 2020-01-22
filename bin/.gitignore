@@ -1,8 +1,7 @@
+/tests/
+/gameClientTest/
 /MydataStructure/
-/algorithms/
-/algorithmsTest/
 /dataStructureTest/
+/MydataStructureTest/
 /gameClient/
-/gui/
-/guiTest/
 /utils/

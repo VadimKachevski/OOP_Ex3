@@ -36,7 +36,6 @@ import utils.StdDraw_gameGUI;
 public class MyGameGUI  {
 
 	graph graph;
-	dbConnector dbCon;
 	Hashtable<Point3D,fruitInterface> fruits;
 	Hashtable<Integer,robotInterface> bots;
 	double minx=Integer.MAX_VALUE;
@@ -44,7 +43,6 @@ public class MyGameGUI  {
 	double miny=Integer.MAX_VALUE;
 	double maxy=Integer.MIN_VALUE;
 	Thread t;
-	Thread r;
 	double x=0;
 	double y=0;
 	double timeGame=0;
@@ -339,7 +337,9 @@ public class MyGameGUI  {
 				fruitSmart.add(CurrFruit);
 			}
 			ArrayList<fruitInterface> testSmarter = new ArrayList<fruitInterface>();
+			boolean removeI = false;
 			for (int i = 0; i < fruitSmart.size(); i++) {
+				removeI = false;
 				for (int j = i+1; j < fruitSmart.size(); j++) {
 					int iSrc = fruitSmart.get(i).getEdge().getSrc();
 					int iDest = fruitSmart.get(i).getEdge().getDest();
@@ -348,13 +348,24 @@ public class MyGameGUI  {
 					if(iSrc == jSrc || iSrc == jDest || iDest == jSrc || iDest == jDest)
 					{
 						testSmarter.add(fruitSmart.get(i));
+						fruitSmart.remove(j);
+						removeI = true;
+						j--;
+						
+						
 					}
 				}
+				if(removeI)
+				{
+					fruitSmart.remove(i);
+					i--;
+				}
+				
 			}
 			while(!testSmarter.isEmpty() && counter < amountRob)
 			{
 				game.addRobot(testSmarter.get(0).getEdge().getSrc());
-				System.out.println(testSmarter.get(0).getEdge().getSrc());
+				//System.out.println(testSmarter.get(0).getEdge().getSrc());
 				testSmarter.remove(0);
 				counter++;
 			}
