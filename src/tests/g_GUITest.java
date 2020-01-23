@@ -1,4 +1,4 @@
-package guiTest;
+package tests;
 
 import java.util.Collection;
 import java.util.Random;

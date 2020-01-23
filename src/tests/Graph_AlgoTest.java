@@ -1,4 +1,4 @@
-package algorithmsTest;
+package tests;
 
 import utils.Point3D;
 import org.junit.jupiter.api.BeforeEach;
@@ -64,9 +64,7 @@ class Graph_AlgoTest {
 		s.connect(5, 7, 0);
 		s.connect(6, 7, 0);
 		s.connect(7, 1, 0);
-////		s.addNode(new vertex(1));
-////		s.addNode(new vertex(2));
-////		s.connect(1, 2, 0);
+
 		Graph_Algo e = new Graph_Algo();
 		e.init(s);
 		assertEquals(true, e.isConnected());
@@ -103,18 +101,6 @@ class Graph_AlgoTest {
 		ga3.init(g3);
 		assertEquals(false, ga3.isConnected());
 		
-//		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-//		System.out.println(timestamp);
-//		graph test = MillionVertex();
-//		Timestamp timestamp2 = new Timestamp(System.currentTimeMillis());
-//		System.out.println(timestamp2);
-//		Graph_Algo gM = new Graph_Algo();
-//		gM.init(test);
-//		Timestamp timestamp3 = new Timestamp(System.currentTimeMillis());
-//		System.out.println(timestamp3);
-//		System.out.println(gM.isConnected());
-//		Timestamp timestamp4 = new Timestamp(System.currentTimeMillis());
-//		System.out.println(timestamp4);
 	}
 
 	@Test
@@ -171,7 +157,6 @@ class Graph_AlgoTest {
 		Graph_Algo e = new Graph_Algo();
 		e.init(s);
 		List<node_data> ans = e.shortestPath(1, 8);
-		//System.out.println(ans.toString());
 	}
 
 	@Test
@@ -200,9 +185,7 @@ class Graph_AlgoTest {
 		s.connect(7, 8, 3);
 		Graph_Algo e = new Graph_Algo();
 		e.init(s);
-		//assertEquals(false, e.isConnectedNew());
-		//List<node_data> ans = e.shortestPath(1, 8);
-		//System.out.println(ans.toString());
+
 		List<Integer> t = new ArrayList<Integer>();
 		t.add(1);
 		t.add(3);
@@ -211,7 +194,6 @@ class Graph_AlgoTest {
 		t.add(7);
 		t.add(6);
 		t.add(8);
-		//List<node_data> ans = e.TSP(t);
 		List<node_data> ans2 = e.TSP(t);
 		List<Integer> expec = new ArrayList<Integer>();
 		expec.add(1);
@@ -227,7 +209,6 @@ class Graph_AlgoTest {
 				fail("Should't not fail");
 			}
 		}
-	//	System.out.println(ans);
 	}
 
 	@Test
@@ -337,21 +318,7 @@ class Graph_AlgoTest {
 		graph.connect(999997, 0, 30);
 		graph.connect(999998, 0, 30);
 		graph.connect(999999, 0, 30);
-//		Collection<node_data> nd = graph.getV();
-//		for (node_data node_data : nd) {
-//			//System.out.println(node_data.getKey());
-//			for(int i=0;i<5;i++)
-//			{
-//				int dest = rand.nextInt(100000);
-//				while(dest != node_data.getKey())
-//				{
-//					dest = rand.nextInt(100000);
-//				}
-//				double weight = rand.nextDouble();
-//				weight*= 100;
-//				graph.connect(node_data.getKey(), dest, weight);
-//			}
-//		}
+
 		
 		return graph;
 	}

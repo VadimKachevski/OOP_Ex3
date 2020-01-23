@@ -26,7 +26,7 @@ public class vertex implements node_data,Serializable {
 		this.metadata = "";
 		this.tag = 0;
 	}
-	
+
 	public vertex(int key) {
 		this.key = key;
 		this.location = null;
@@ -79,68 +79,72 @@ public class vertex implements node_data,Serializable {
 		{
 			this.location = null;
 		}
-	this.weight = weight;
-	this.tag = tag;
-	this.metadata = "";
-}
-public vertex(vertex other)
-{
-	this(other.key,other.location,other.weight,other.tag);
-	this.metadata = other.metadata;
+		this.weight = weight;
+		this.tag = tag;
+		this.metadata = "";
+	}
+	public vertex(vertex other)
+	{
+		this(other.key,other.location,other.weight,other.tag);
+		this.metadata = other.metadata;
 
-}
-public vertex(node_data other)
-{
-	this(other.getKey(),other.getLocation(),other.getWeight(),other.getTag());
-	this.metadata = other.getInfo();
+	}
+	public vertex(node_data other)
+	{
+		this(other.getKey(),other.getLocation(),other.getWeight(),other.getTag());
+		this.metadata = other.getInfo();
 
-}
-@Override
-public int getKey() {
-	return this.key;
-}
+	}
+	@Override
+	public int getKey() {
+		return this.key;
+	}
 
-@Override
-public Point3D getLocation() {
-	return this.location;
-}
+	@Override
+	public Point3D getLocation() {
+		return this.location;
+	}
 
-@Override
-public void setLocation(Point3D p) {
-	////// Check if i need to change weight later
-	this.location  = new Point3D(p);
-}
+	@Override
+	public void setLocation(Point3D p) {
+		////// Check if i need to change weight later
+		this.location  = new Point3D(p);
+	}
 
-@Override
-public double getWeight() {
-	return this.weight;
-}
+	@Override
+	public double getWeight() {
+		return this.weight;
+	}
 
-@Override
-public void setWeight(double w) {
-	this.weight = w;
+	@Override
+	public void setWeight(double w) {
+		this.weight = w;
 
-}
+	}
 
-@Override
-public String getInfo() {
-	return this.metadata;
-}
+	@Override
+	public String getInfo() {
+		return this.metadata;
+	}
 
-@Override
-public void setInfo(String s) {
-	this.metadata = s;
+	@Override
+	public void setInfo(String s) {
+		this.metadata = s;
 
-}
+	}
 
-@Override
-public int getTag() {
-	return tag;
-}
+	@Override
+	public int getTag() {
+		return tag;
+	}
 
-@Override
-public void setTag(int t) {
-	this.tag = t;
+	@Override
+	public void setTag(int t) {
+		this.tag = t;
 
-}
+	}
+	public String toString() {
+		return ("key: " + key + " location: " + location + " weight: "
+				+ weight + " info: " + metadata + " tag: " + tag);
+	}
 }

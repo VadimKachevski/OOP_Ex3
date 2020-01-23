@@ -1,4 +1,4 @@
-package MydataStructureTest;
+package tests;
 
 import algorithms.Graph_Algo;
 import utils.Point3D;
@@ -21,7 +21,6 @@ class DGraphTest {
 	{
 		graph = createGraphBefore();
 	}
-	
 	
 	@Test
 	void testgetNode() {
